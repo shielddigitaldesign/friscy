@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name RISCV_FPGA_Board-rescue)(type Legacy)(uri ${KIPRJMOD}/RISCV_FPGA_Board-rescue.lib)(options "")(descr ""))
+)

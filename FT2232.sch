@@ -1,0 +1,1864 @@
+EESchema Schematic File Version 4
+LIBS:RISCV_FPGA_Board-cache
+EELAYER 26 0
+EELAYER END
+$Descr USLedger 17000 11000
+encoding utf-8
+Sheet 5 9
+Title "fRISCY"
+Date "2017-12-23"
+Rev "1.1"
+Comp ""
+Comment1 "FPGA + RISC-V Digital Processing Board"
+Comment2 "FTDI USB to UART/JTAG"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L RISCV_FPGA_Board-rescue:1k-Resistors_Stackpole_0805 R56
+U 1 1 5A12D39C
+P 7700 4000
+F 0 "R56" H 7800 4060 40  0000 C CNN
+F 1 "12k" H 7800 3940 40  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7825 3765 60  0001 C CNN
+F 3 "https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf" H 7825 3855 60  0001 C CNN
+F 4 "Fitted" H 7800 4160 50  0001 C CNN "DNP"
+F 5 "RES SMD 12K OHM 1% 1/10W 0603" H 7800 4160 50  0001 C CNN "Description"
+F 6 "RMCF0603FT12K0CT-ND" H 7800 4160 50  0001 C CNN "Digi-Key_PN"
+F 7 "155" H 7800 4160 50  0001 C CNN "HighTemp"
+F 8 "-55" H 7800 4160 50  0001 C CNN "LowTemp"
+F 9 "RMCF0603FT12K0" H 7800 4160 50  0001 C CNN "MPN"
+F 10 "Stackpole Electronics Inc." H 7800 4160 50  0001 C CNN "Manufacturer"
+	1    7700 4000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C61
+U 1 1 5A12D3A5
+P 2350 3700
+AR Path="/5A12D3A5" Ref="C61"  Part="1" 
+AR Path="/59C355B2/5A12D3A5" Ref="C61"  Part="1" 
+F 0 "C61" H 2375 3800 50  0000 L CNN
+F 1 "0.1uF" H 2375 3600 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 2388 3550 50  0001 C CNN
+F 3 "http://search.murata.co.jp/Ceramy/image/img/A01X/partnumbering_e_01.pdf" H 2350 3700 50  0001 C CNN
+F 4 "Fitted" H 2375 3900 50  0001 C CNN "DNP"
+F 5 "CAP CER 0.1UF 16V X7R 0603" H 2375 3900 50  0001 C CNN "Description"
+F 6 "490-1532-6-ND" H 2375 3900 50  0001 C CNN "Digi-Key_PN"
+F 7 "125" H 2375 3900 50  0001 C CNN "HighTemp"
+F 8 "-55" H 2375 3900 50  0001 C CNN "LowTemp"
+F 9 "GRM188R71C104KA01D" H 2375 3900 50  0001 C CNN "MPN"
+F 10 "Murata Electronics North America" H 2375 3900 50  0001 C CNN "Manufacturer"
+	1    2350 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C64
+U 1 1 5A12D518
+P 2700 3700
+AR Path="/5A12D518" Ref="C64"  Part="1" 
+AR Path="/59C355B2/5A12D518" Ref="C64"  Part="1" 
+F 0 "C64" H 2725 3800 50  0000 L CNN
+F 1 "3.3uF" H 2725 3600 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 2738 3550 50  0001 C CNN
+F 3 "https://product.tdk.com/en/products/common/pdf/mlcc_partnumber_description.pdf" H 2700 3700 50  0001 C CNN
+F 4 "Fitted" H 2725 3900 50  0001 C CNN "DNP"
+F 5 "CAP CER 3.3UF 16V X5R 0603" H 2725 3900 50  0001 C CNN "Description"
+F 6 "445-7476-1-ND" H 2725 3900 50  0001 C CNN "Digi-Key_PN"
+F 7 "85" H 2725 3900 50  0001 C CNN "HighTemp"
+F 8 "-55" H 2725 3900 50  0001 C CNN "LowTemp"
+F 9 "C1608X5R1C335K080AC" H 2725 3900 50  0001 C CNN "MPN"
+F 10 "TDK Corporation" H 2725 3900 50  0001 C CNN "Manufacturer"
+	1    2700 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0112
+U 1 1 5A12D55E
+P 1600 3950
+F 0 "#PWR0112" H 1600 3700 50  0001 C CNN
+F 1 "GND" H 1600 3800 50  0000 C CNN
+F 2 "" H 1600 3950 50  0001 C CNN
+F 3 "" H 1600 3950 50  0001 C CNN
+	1    1600 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C66
+U 1 1 5A12DD14
+P 7550 2400
+AR Path="/5A12DD14" Ref="C66"  Part="1" 
+AR Path="/59C355B2/5A12DD14" Ref="C66"  Part="1" 
+F 0 "C66" H 7575 2500 50  0000 L CNN
+F 1 "0.1uF" H 7575 2300 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 7588 2250 50  0001 C CNN
+F 3 "http://search.murata.co.jp/Ceramy/image/img/A01X/partnumbering_e_01.pdf" H 7550 2400 50  0001 C CNN
+F 4 "Fitted" H 7575 2600 50  0001 C CNN "DNP"
+F 5 "CAP CER 0.1UF 16V X7R 0603" H 7575 2600 50  0001 C CNN "Description"
+F 6 "490-1532-6-ND" H 7575 2600 50  0001 C CNN "Digi-Key_PN"
+F 7 "125" H 7575 2600 50  0001 C CNN "HighTemp"
+F 8 "-55" H 7575 2600 50  0001 C CNN "LowTemp"
+F 9 "GRM188R71C104KA01D" H 7575 2600 50  0001 C CNN "MPN"
+F 10 "Murata Electronics North America" H 7575 2600 50  0001 C CNN "Manufacturer"
+	1    7550 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C63
+U 1 1 5A12DD1A
+P 7200 2400
+AR Path="/5A12DD1A" Ref="C63"  Part="1" 
+AR Path="/59C355B2/5A12DD1A" Ref="C63"  Part="1" 
+F 0 "C63" H 7225 2500 50  0000 L CNN
+F 1 "4.7uF" H 7225 2300 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 7238 2250 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/front/downloadcms.do?path=/kr/support/product-search/mlcc/__icsFiles/afieldfile/2014/11/05&fileName=C_CL10A475KO8NNNC.pdf" H 7200 2400 50  0001 C CNN
+F 4 "Fitted" H 7225 2600 50  0001 C CNN "DNP"
+F 5 "CAP CER 4.7UF 16V X5R 0603" H 7225 2600 50  0001 C CNN "Description"
+F 6 "1276-1784-1-ND" H 7225 2600 50  0001 C CNN "Digi-Key_PN"
+F 7 "85" H 7225 2600 50  0001 C CNN "HighTemp"
+F 8 "-55" H 7225 2600 50  0001 C CNN "LowTemp"
+F 9 "CL10A475KO8NNNC" H 7225 2600 50  0001 C CNN "MPN"
+F 10 "Samsung Electro-Mechanics" H 7225 2600 50  0001 C CNN "Manufacturer"
+	1    7200 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0113
+U 1 1 5A12DD20
+P 7200 2650
+F 0 "#PWR0113" H 7200 2400 50  0001 C CNN
+F 1 "GND" H 7200 2500 50  0000 C CNN
+F 2 "" H 7200 2650 50  0001 C CNN
+F 3 "" H 7200 2650 50  0001 C CNN
+	1    7200 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C65
+U 1 1 5A12DE2C
+P 7550 1550
+AR Path="/5A12DE2C" Ref="C65"  Part="1" 
+AR Path="/59C355B2/5A12DE2C" Ref="C65"  Part="1" 
+F 0 "C65" H 7575 1650 50  0000 L CNN
+F 1 "0.1uF" H 7575 1450 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 7588 1400 50  0001 C CNN
+F 3 "http://search.murata.co.jp/Ceramy/image/img/A01X/partnumbering_e_01.pdf" H 7550 1550 50  0001 C CNN
+F 4 "Fitted" H 7575 1750 50  0001 C CNN "DNP"
+F 5 "CAP CER 0.1UF 16V X7R 0603" H 7575 1750 50  0001 C CNN "Description"
+F 6 "490-1532-6-ND" H 7575 1750 50  0001 C CNN "Digi-Key_PN"
+F 7 "125" H 7575 1750 50  0001 C CNN "HighTemp"
+F 8 "-55" H 7575 1750 50  0001 C CNN "LowTemp"
+F 9 "GRM188R71C104KA01D" H 7575 1750 50  0001 C CNN "MPN"
+F 10 "Murata Electronics North America" H 7575 1750 50  0001 C CNN "Manufacturer"
+	1    7550 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C62
+U 1 1 5A12DE32
+P 7200 1550
+AR Path="/5A12DE32" Ref="C62"  Part="1" 
+AR Path="/59C355B2/5A12DE32" Ref="C62"  Part="1" 
+F 0 "C62" H 7225 1650 50  0000 L CNN
+F 1 "4.7uF" H 7225 1450 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 7238 1400 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/front/downloadcms.do?path=/kr/support/product-search/mlcc/__icsFiles/afieldfile/2014/11/05&fileName=C_CL10A475KO8NNNC.pdf" H 7200 1550 50  0001 C CNN
+F 4 "Fitted" H 7225 1750 50  0001 C CNN "DNP"
+F 5 "CAP CER 4.7UF 16V X5R 0603" H 7225 1750 50  0001 C CNN "Description"
+F 6 "1276-1784-1-ND" H 7225 1750 50  0001 C CNN "Digi-Key_PN"
+F 7 "85" H 7225 1750 50  0001 C CNN "HighTemp"
+F 8 "-55" H 7225 1750 50  0001 C CNN "LowTemp"
+F 9 "CL10A475KO8NNNC" H 7225 1750 50  0001 C CNN "MPN"
+F 10 "Samsung Electro-Mechanics" H 7225 1750 50  0001 C CNN "Manufacturer"
+	1    7200 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0114
+U 1 1 5A12DE38
+P 7200 1800
+F 0 "#PWR0114" H 7200 1550 50  0001 C CNN
+F 1 "GND" H 7200 1650 50  0000 C CNN
+F 2 "" H 7200 1800 50  0001 C CNN
+F 3 "" H 7200 1800 50  0001 C CNN
+	1    7200 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Ferrite_Bead_Small FB5
+U 1 1 5A12E22B
+P 6700 2200
+AR Path="/5A12E22B" Ref="FB5"  Part="1" 
+AR Path="/59C355B2/5A12E22B" Ref="FB5"  Part="1" 
+F 0 "FB5" V 6650 2300 50  0000 L CNN
+F 1 "600Ohm/100MHz" V 6750 2250 50  0000 L CNN
+F 2 "Inductors_SMD:L_0603" V 6630 2200 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/beads_commercial_power_mpz1608_en.pdf" H 6700 2200 50  0001 C CNN
+F 4 "Fitted" H 6650 2400 50  0001 C CNN "DNP"
+F 5 "FERRITE BEAD 600 OHM 0603 1LN" H 6650 2400 50  0001 C CNN "Description"
+F 6 "445-2205-1-ND" H 6650 2400 50  0001 C CNN "Digi-Key_PN"
+F 7 "125" H 6650 2400 50  0001 C CNN "HighTemp"
+F 8 "-55" H 6650 2400 50  0001 C CNN "LowTemp"
+F 9 "MPZ1608S601ATA00" H 6650 2400 50  0001 C CNN "MPN"
+F 10 "TDK Corporation" H 6650 2400 50  0001 C CNN "Manufacturer"
+	1    6700 2200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Ferrite_Bead_Small FB4
+U 1 1 5A12E3FA
+P 6700 1350
+AR Path="/5A12E3FA" Ref="FB4"  Part="1" 
+AR Path="/59C355B2/5A12E3FA" Ref="FB4"  Part="1" 
+F 0 "FB4" V 6650 1450 50  0000 L CNN
+F 1 "600Ohm/100MHz" V 6750 1400 50  0000 L CNN
+F 2 "Inductors_SMD:L_0603" V 6630 1350 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/beads_commercial_power_mpz1608_en.pdf" H 6700 1350 50  0001 C CNN
+F 4 "Fitted" H 6650 1550 50  0001 C CNN "DNP"
+F 5 "FERRITE BEAD 600 OHM 0603 1LN" H 6650 1550 50  0001 C CNN "Description"
+F 6 "445-2205-1-ND" H 6650 1550 50  0001 C CNN "Digi-Key_PN"
+F 7 "125" H 6650 1550 50  0001 C CNN "HighTemp"
+F 8 "-55" H 6650 1550 50  0001 C CNN "LowTemp"
+F 9 "MPZ1608S601ATA00" H 6650 1550 50  0001 C CNN "MPN"
+F 10 "TDK Corporation" H 6650 1550 50  0001 C CNN "Manufacturer"
+	1    6700 1350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C58
+U 1 1 5A12E734
+P 700 3600
+AR Path="/5A12E734" Ref="C58"  Part="1" 
+AR Path="/59C355B2/5A12E734" Ref="C58"  Part="1" 
+F 0 "C58" H 725 3700 50  0000 L CNN
+F 1 "0.1uF" H 725 3500 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 738 3450 50  0001 C CNN
+F 3 "http://search.murata.co.jp/Ceramy/image/img/A01X/partnumbering_e_01.pdf" H 700 3600 50  0001 C CNN
+F 4 "Fitted" H 725 3800 50  0001 C CNN "DNP"
+F 5 "CAP CER 0.1UF 16V X7R 0603" H 725 3800 50  0001 C CNN "Description"
+F 6 "490-1532-6-ND" H 725 3800 50  0001 C CNN "Digi-Key_PN"
+F 7 "125" H 725 3800 50  0001 C CNN "HighTemp"
+F 8 "-55" H 725 3800 50  0001 C CNN "LowTemp"
+F 9 "GRM188R71C104KA01D" H 725 3800 50  0001 C CNN "MPN"
+F 10 "Murata Electronics North America" H 725 3800 50  0001 C CNN "Manufacturer"
+	1    700  3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0115
+U 1 1 5A12E82A
+P 700 3800
+F 0 "#PWR0115" H 700 3550 50  0001 C CNN
+F 1 "GND" H 700 3650 50  0000 C CNN
+F 2 "" H 700 3800 50  0001 C CNN
+F 3 "" H 700 3800 50  0001 C CNN
+	1    700  3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C67
+U 1 1 5A12F3BE
+P 9600 2400
+AR Path="/5A12F3BE" Ref="C67"  Part="1" 
+AR Path="/59C355B2/5A12F3BE" Ref="C67"  Part="1" 
+F 0 "C67" H 9625 2500 50  0000 L CNN
+F 1 "0.1uF" H 9625 2300 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 9638 2250 50  0001 C CNN
+F 3 "http://search.murata.co.jp/Ceramy/image/img/A01X/partnumbering_e_01.pdf" H 9600 2400 50  0001 C CNN
+F 4 "Fitted" H 9625 2600 50  0001 C CNN "DNP"
+F 5 "CAP CER 0.1UF 16V X7R 0603" H 9625 2600 50  0001 C CNN "Description"
+F 6 "490-1532-6-ND" H 9625 2600 50  0001 C CNN "Digi-Key_PN"
+F 7 "125" H 9625 2600 50  0001 C CNN "HighTemp"
+F 8 "-55" H 9625 2600 50  0001 C CNN "LowTemp"
+F 9 "GRM188R71C104KA01D" H 9625 2600 50  0001 C CNN "MPN"
+F 10 "Murata Electronics North America" H 9625 2600 50  0001 C CNN "Manufacturer"
+	1    9600 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C68
+U 1 1 5A12F46C
+P 9900 2400
+AR Path="/5A12F46C" Ref="C68"  Part="1" 
+AR Path="/59C355B2/5A12F46C" Ref="C68"  Part="1" 
+F 0 "C68" H 9925 2500 50  0000 L CNN
+F 1 "0.1uF" H 9925 2300 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 9938 2250 50  0001 C CNN
+F 3 "http://search.murata.co.jp/Ceramy/image/img/A01X/partnumbering_e_01.pdf" H 9900 2400 50  0001 C CNN
+F 4 "Fitted" H 9925 2600 50  0001 C CNN "DNP"
+F 5 "CAP CER 0.1UF 16V X7R 0603" H 9925 2600 50  0001 C CNN "Description"
+F 6 "490-1532-6-ND" H 9925 2600 50  0001 C CNN "Digi-Key_PN"
+F 7 "125" H 9925 2600 50  0001 C CNN "HighTemp"
+F 8 "-55" H 9925 2600 50  0001 C CNN "LowTemp"
+F 9 "GRM188R71C104KA01D" H 9925 2600 50  0001 C CNN "MPN"
+F 10 "Murata Electronics North America" H 9925 2600 50  0001 C CNN "Manufacturer"
+	1    9900 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C69
+U 1 1 5A12F4AE
+P 10200 2400
+AR Path="/5A12F4AE" Ref="C69"  Part="1" 
+AR Path="/59C355B2/5A12F4AE" Ref="C69"  Part="1" 
+F 0 "C69" H 10225 2500 50  0000 L CNN
+F 1 "0.1uF" H 10225 2300 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 10238 2250 50  0001 C CNN
+F 3 "http://search.murata.co.jp/Ceramy/image/img/A01X/partnumbering_e_01.pdf" H 10200 2400 50  0001 C CNN
+F 4 "Fitted" H 10225 2600 50  0001 C CNN "DNP"
+F 5 "CAP CER 0.1UF 16V X7R 0603" H 10225 2600 50  0001 C CNN "Description"
+F 6 "490-1532-6-ND" H 10225 2600 50  0001 C CNN "Digi-Key_PN"
+F 7 "125" H 10225 2600 50  0001 C CNN "HighTemp"
+F 8 "-55" H 10225 2600 50  0001 C CNN "LowTemp"
+F 9 "GRM188R71C104KA01D" H 10225 2600 50  0001 C CNN "MPN"
+F 10 "Murata Electronics North America" H 10225 2600 50  0001 C CNN "Manufacturer"
+	1    10200 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C70
+U 1 1 5A12F4F7
+P 10500 2400
+AR Path="/5A12F4F7" Ref="C70"  Part="1" 
+AR Path="/59C355B2/5A12F4F7" Ref="C70"  Part="1" 
+F 0 "C70" H 10525 2500 50  0000 L CNN
+F 1 "0.1uF" H 10525 2300 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 10538 2250 50  0001 C CNN
+F 3 "http://search.murata.co.jp/Ceramy/image/img/A01X/partnumbering_e_01.pdf" H 10500 2400 50  0001 C CNN
+F 4 "Fitted" H 10525 2600 50  0001 C CNN "DNP"
+F 5 "CAP CER 0.1UF 16V X7R 0603" H 10525 2600 50  0001 C CNN "Description"
+F 6 "490-1532-6-ND" H 10525 2600 50  0001 C CNN "Digi-Key_PN"
+F 7 "125" H 10525 2600 50  0001 C CNN "HighTemp"
+F 8 "-55" H 10525 2600 50  0001 C CNN "LowTemp"
+F 9 "GRM188R71C104KA01D" H 10525 2600 50  0001 C CNN "MPN"
+F 10 "Murata Electronics North America" H 10525 2600 50  0001 C CNN "Manufacturer"
+	1    10500 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0116
+U 1 1 5A12F75E
+P 10500 2650
+F 0 "#PWR0116" H 10500 2400 50  0001 C CNN
+F 1 "GND" H 10500 2500 50  0000 C CNN
+F 2 "" H 10500 2650 50  0001 C CNN
+F 3 "" H 10500 2650 50  0001 C CNN
+	1    10500 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C60
+U 1 1 5A12FB5E
+P 2000 3700
+AR Path="/5A12FB5E" Ref="C60"  Part="1" 
+AR Path="/59C355B2/5A12FB5E" Ref="C60"  Part="1" 
+F 0 "C60" H 2025 3800 50  0000 L CNN
+F 1 "0.1uF" H 2025 3600 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 2038 3550 50  0001 C CNN
+F 3 "http://search.murata.co.jp/Ceramy/image/img/A01X/partnumbering_e_01.pdf" H 2000 3700 50  0001 C CNN
+F 4 "Fitted" H 2025 3900 50  0001 C CNN "DNP"
+F 5 "CAP CER 0.1UF 16V X7R 0603" H 2025 3900 50  0001 C CNN "Description"
+F 6 "490-1532-6-ND" H 2025 3900 50  0001 C CNN "Digi-Key_PN"
+F 7 "125" H 2025 3900 50  0001 C CNN "HighTemp"
+F 8 "-55" H 2025 3900 50  0001 C CNN "LowTemp"
+F 9 "GRM188R71C104KA01D" H 2025 3900 50  0001 C CNN "MPN"
+F 10 "Murata Electronics North America" H 2025 3900 50  0001 C CNN "Manufacturer"
+	1    2000 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C59
+U 1 1 5A12FBAB
+P 1600 3700
+AR Path="/5A12FBAB" Ref="C59"  Part="1" 
+AR Path="/59C355B2/5A12FBAB" Ref="C59"  Part="1" 
+F 0 "C59" H 1625 3800 50  0000 L CNN
+F 1 "0.1uF" H 1625 3600 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 1638 3550 50  0001 C CNN
+F 3 "http://search.murata.co.jp/Ceramy/image/img/A01X/partnumbering_e_01.pdf" H 1600 3700 50  0001 C CNN
+F 4 "Fitted" H 1625 3900 50  0001 C CNN "DNP"
+F 5 "CAP CER 0.1UF 16V X7R 0603" H 1625 3900 50  0001 C CNN "Description"
+F 6 "490-1532-6-ND" H 1625 3900 50  0001 C CNN "Digi-Key_PN"
+F 7 "125" H 1625 3900 50  0001 C CNN "HighTemp"
+F 8 "-55" H 1625 3900 50  0001 C CNN "LowTemp"
+F 9 "GRM188R71C104KA01D" H 1625 3900 50  0001 C CNN "MPN"
+F 10 "Murata Electronics North America" H 1625 3900 50  0001 C CNN "Manufacturer"
+	1    1600 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0117
+U 1 1 5A131DD1
+P 700 3200
+F 0 "#PWR0117" H 700 3050 50  0001 C CNN
+F 1 "+3V3" H 700 3340 50  0000 C CNN
+F 2 "" H 700 3200 50  0001 C CNN
+F 3 "" H 700 3200 50  0001 C CNN
+	1    700  3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0118
+U 1 1 5A132B8A
+P 7350 4000
+F 0 "#PWR0118" H 7350 3750 50  0001 C CNN
+F 1 "GND" H 7350 3850 50  0000 C CNN
+F 2 "" H 7350 4000 50  0001 C CNN
+F 3 "" H 7350 4000 50  0001 C CNN
+	1    7350 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L RISCV_FPGA_Board-rescue:1k-Resistors_Stackpole_0805 R55
+U 1 1 5A132FA5
+P 6650 4450
+F 0 "R55" H 6750 4510 40  0000 C CNN
+F 1 "12k" H 6750 4390 40  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6775 4215 60  0001 C CNN
+F 3 "https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf" H 6775 4305 60  0001 C CNN
+F 4 "Fitted" H 6750 4610 50  0001 C CNN "DNP"
+F 5 "RES SMD 12K OHM 1% 1/10W 0603" H 6750 4610 50  0001 C CNN "Description"
+F 6 "RMCF0603FT12K0CT-ND" H 6750 4610 50  0001 C CNN "Digi-Key_PN"
+F 7 "155" H 6750 4610 50  0001 C CNN "HighTemp"
+F 8 "-55" H 6750 4610 50  0001 C CNN "LowTemp"
+F 9 "RMCF0603FT12K0" H 6750 4610 50  0001 C CNN "MPN"
+F 10 "Stackpole Electronics Inc." H 6750 4610 50  0001 C CNN "Manufacturer"
+	1    6650 4450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L RISCV_FPGA_Board-rescue:FDG1024NZ-Transistor_FET Q4
+U 1 1 5A13BA9A
+P 5850 4400
+AR Path="/5A13BA9A" Ref="Q4"  Part="1" 
+AR Path="/59C355B2/5A13BA9A" Ref="Q4"  Part="1" 
+F 0 "Q4" V 5850 4550 50  0000 L CNN
+F 1 "DMN63D8LDW-7" V 6150 4150 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 6050 4325 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/FD/FDG1024NZ.pdf" H 5850 4400 50  0001 L CNN
+F 4 "Fitted" H 5850 4650 50  0001 C CNN "DNP"
+F 5 "MOSFET 2N-CH 30V 0.22A SOT363" H 5850 4650 50  0001 C CNN "Description"
+F 6 "DMN63D8LDW-7CT-ND" H 5850 4650 50  0001 C CNN "Digi-Key_PN"
+F 7 "150" H 5850 4650 50  0001 C CNN "HighTemp"
+F 8 "-55" H 5850 4650 50  0001 C CNN "LowTemp"
+F 9 "DMN63D8LDW-7" H 5850 4650 50  0001 C CNN "MPN"
+F 10 "Diodes Incorporated" H 5850 4650 50  0001 C CNN "Manufacturer"
+	1    5850 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+1V8 #PWR0119
+U 1 1 5A13BE4B
+P 5850 4200
+F 0 "#PWR0119" H 5850 4050 50  0001 C CNN
+F 1 "+1V8" H 5850 4340 50  0000 C CNN
+F 2 "" H 5850 4200 50  0001 C CNN
+F 3 "" H 5850 4200 50  0001 C CNN
+	1    5850 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C71
+U 1 1 5A13DA56
+P 3000 5850
+AR Path="/5A13DA56" Ref="C71"  Part="1" 
+AR Path="/59C355B2/5A13DA56" Ref="C71"  Part="1" 
+F 0 "C71" H 3025 5950 50  0000 L CNN
+F 1 "0.1uF" H 3025 5750 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 3038 5700 50  0001 C CNN
+F 3 "http://search.murata.co.jp/Ceramy/image/img/A01X/partnumbering_e_01.pdf" H 3000 5850 50  0001 C CNN
+F 4 "Fitted" H 3025 6050 50  0001 C CNN "DNP"
+F 5 "CAP CER 0.1UF 16V X7R 0603" H 3025 6050 50  0001 C CNN "Description"
+F 6 "490-1532-6-ND" H 3025 6050 50  0001 C CNN "Digi-Key_PN"
+F 7 "125" H 3025 6050 50  0001 C CNN "HighTemp"
+F 8 "-55" H 3025 6050 50  0001 C CNN "LowTemp"
+F 9 "GRM188R71C104KA01D" H 3025 6050 50  0001 C CNN "MPN"
+F 10 "Murata Electronics North America" H 3025 6050 50  0001 C CNN "Manufacturer"
+	1    3000 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Memory_EEPROM:93LCxxB U10
+U 1 1 5A22D1BF
+P 2800 6500
+AR Path="/5A22D1BF" Ref="U10"  Part="1" 
+AR Path="/59C355B2/5A22D1BF" Ref="U10"  Part="1" 
+F 0 "U10" H 2550 6750 50  0000 C CNN
+F 1 "93LC66BT-I/SN" H 2350 6250 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 2700 6500 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21795E.pdf" H 2800 6600 50  0001 C CNN
+F 4 "Fitted" H 2650 6950 50  0001 C CNN "DNP"
+F 5 "IC EEPROM 4KBIT 2MHZ 8SOIC" H 2650 6950 50  0001 C CNN "Description"
+F 6 "93LC66BT-I/SNCT-ND" H 2650 6950 50  0001 C CNN "Digi-Key_PN"
+F 7 "85" H 2650 6950 50  0001 C CNN "HighTemp"
+F 8 "-40" H 2650 6950 50  0001 C CNN "LowTemp"
+F 9 "93LC66BT-I/SN" H 2800 6500 60  0001 C CNN "MPN"
+F 10 "Microchip Technology" H 2650 6950 50  0001 C CNN "Manufacturer"
+	1    2800 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0120
+U 1 1 5A22DADC
+P 3000 6050
+F 0 "#PWR0120" H 3000 5800 50  0001 C CNN
+F 1 "GND" H 3000 5900 50  0000 C CNN
+F 2 "" H 3000 6050 50  0001 C CNN
+F 3 "" H 3000 6050 50  0001 C CNN
+	1    3000 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0121
+U 1 1 5A22DC35
+P 2800 6900
+F 0 "#PWR0121" H 2800 6650 50  0001 C CNN
+F 1 "GND" H 2800 6750 50  0000 C CNN
+F 2 "" H 2800 6900 50  0001 C CNN
+F 3 "" H 2800 6900 50  0001 C CNN
+	1    2800 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L RISCV_FPGA_Board-rescue:1k-Resistors_Stackpole_0805 R89
+U 1 1 5A22E0D3
+P 3600 6600
+F 0 "R89" H 3700 6660 40  0000 C CNN
+F 1 "2.2k" H 3700 6540 40  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3725 6365 60  0001 C CNN
+F 3 "https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf" H 3725 6455 60  0001 C CNN
+F 4 "Fitted" H 3700 6760 50  0001 C CNN "DNP"
+F 5 "RES SMD 2.2 OHM 1% 1/10W 0603" H 3700 6760 50  0001 C CNN "Description"
+F 6 "RMCF0603FT2R20CT-ND" H 3700 6760 50  0001 C CNN "Digi-Key_PN"
+F 7 "155" H 3700 6760 50  0001 C CNN "HighTemp"
+F 8 "-55" H 3700 6760 50  0001 C CNN "LowTemp"
+F 9 "RMCF0603FT2R20" H 3700 6760 50  0001 C CNN "MPN"
+F 10 "Stackpole Electronics Inc." H 3700 6760 50  0001 C CNN "Manufacturer"
+	1    3600 6600
+	-1   0    0    1   
+$EndComp
+$Comp
+L RISCV_FPGA_Board-rescue:1k-Resistors_Stackpole_0805 R87
+U 1 1 5A22E8A3
+P 3350 7150
+F 0 "R87" H 3450 7210 40  0000 C CNN
+F 1 "10k" H 3450 7090 40  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3475 6915 60  0001 C CNN
+F 3 "https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf" H 3475 7005 60  0001 C CNN
+F 4 "Fitted" H 3450 7310 50  0001 C CNN "DNP"
+F 5 "RES SMD 10K OHM 1% 1/10W 0603" H 3450 7310 50  0001 C CNN "Description"
+F 6 "RMCF0603FT10K0CT-ND" H 3450 7310 50  0001 C CNN "Digi-Key_PN"
+F 7 "155" H 3450 7310 50  0001 C CNN "HighTemp"
+F 8 "-55" H 3450 7310 50  0001 C CNN "LowTemp"
+F 9 "RMCF0603FT10K0 " H 3450 7310 50  0001 C CNN "MPN"
+F 10 "Stackpole Electronics Inc." H 3450 7310 50  0001 C CNN "Manufacturer"
+	1    3350 7150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L RISCV_FPGA_Board-rescue:1k-Resistors_Stackpole_0805 R88
+U 1 1 5A22EAAB
+P 3200 4900
+F 0 "R88" H 3300 4960 40  0000 C CNN
+F 1 "10k" H 3300 4840 40  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3325 4665 60  0001 C CNN
+F 3 "https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf" H 3325 4755 60  0001 C CNN
+F 4 "Fitted" H 3300 5060 50  0001 C CNN "DNP"
+F 5 "RES SMD 10K OHM 1% 1/10W 0603" H 3300 5060 50  0001 C CNN "Description"
+F 6 "RMCF0603FT10K0CT-ND" H 3300 5060 50  0001 C CNN "Digi-Key_PN"
+F 7 "155" H 3300 5060 50  0001 C CNN "HighTemp"
+F 8 "-55" H 3300 5060 50  0001 C CNN "LowTemp"
+F 9 "RMCF0603FT10K0 " H 3300 5060 50  0001 C CNN "MPN"
+F 10 "Stackpole Electronics Inc." H 3300 5060 50  0001 C CNN "Manufacturer"
+	1    3200 4900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L RISCV_FPGA_Board-rescue:1k-Resistors_Stackpole_0805 R86
+U 1 1 5A22EB17
+P 3500 4900
+F 0 "R86" H 3600 4960 40  0000 C CNN
+F 1 "10k" H 3600 4840 40  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3625 4665 60  0001 C CNN
+F 3 "https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf" H 3625 4755 60  0001 C CNN
+F 4 "Fitted" H 3600 5060 50  0001 C CNN "DNP"
+F 5 "RES SMD 10K OHM 1% 1/10W 0603" H 3600 5060 50  0001 C CNN "Description"
+F 6 "RMCF0603FT10K0CT-ND" H 3600 5060 50  0001 C CNN "Digi-Key_PN"
+F 7 "155" H 3600 5060 50  0001 C CNN "HighTemp"
+F 8 "-55" H 3600 5060 50  0001 C CNN "LowTemp"
+F 9 "RMCF0603FT10K0 " H 3600 5060 50  0001 C CNN "MPN"
+F 10 "Stackpole Electronics Inc." H 3600 5060 50  0001 C CNN "Manufacturer"
+	1    3500 4900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0122
+U 1 1 5A22FC23
+P 7900 7650
+F 0 "#PWR0122" H 7900 7400 50  0001 C CNN
+F 1 "GND" H 7900 7500 50  0000 C CNN
+F 2 "" H 7900 7650 50  0001 C CNN
+F 3 "" H 7900 7650 50  0001 C CNN
+	1    7900 7650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Crystal_GND24 Y5
+U 1 1 5A2341E5
+P 6750 6100
+AR Path="/5A2341E5" Ref="Y5"  Part="1" 
+AR Path="/59C355B2/5A2341E5" Ref="Y5"  Part="1" 
+F 0 "Y5" H 6875 6300 50  0000 L CNN
+F 1 "12MHz" H 6875 6225 50  0000 L CNN
+F 2 "Crystals:Crystal_SMD_Abracon_ABM8G-4pin_3.2x2.5mm" H 6750 6100 50  0001 C CNN
+F 3 "https://www.abracon.com/Resonators/ABM8G.pdf" H 6750 6100 50  0001 C CNN
+F 4 "Fitted" H 6875 6400 50  0001 C CNN "DNP"
+F 5 "CRYSTAL 12.0000MHZ 10PF SMD" H 6875 6400 50  0001 C CNN "Description"
+F 6 "535-10283-1-ND" H 6875 6400 50  0001 C CNN "Digi-Key_PN"
+F 7 "70" H 6875 6400 50  0001 C CNN "HighTemp"
+F 8 "-20" H 6875 6400 50  0001 C CNN "LowTemp"
+F 9 "ABM8G-12.000MHZ-B4Y-T" H 6750 6100 60  0001 C CNN "MPN"
+F 10 "Abracon LLC" H 6875 6400 50  0001 C CNN "Manufacturer"
+	1    6750 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0123
+U 1 1 5A2356E8
+P 6750 6300
+F 0 "#PWR0123" H 6750 6050 50  0001 C CNN
+F 1 "GND" H 6750 6150 50  0000 C CNN
+F 2 "" H 6750 6300 50  0001 C CNN
+F 3 "" H 6750 6300 50  0001 C CNN
+	1    6750 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0124
+U 1 1 5A235747
+P 6750 5900
+F 0 "#PWR0124" H 6750 5650 50  0001 C CNN
+F 1 "GND" H 6750 5750 50  0000 C CNN
+F 2 "" H 6750 5900 50  0001 C CNN
+F 3 "" H 6750 5900 50  0001 C CNN
+	1    6750 5900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C82
+U 1 1 5A235F1E
+P 6400 6400
+AR Path="/5A235F1E" Ref="C82"  Part="1" 
+AR Path="/59C355B2/5A235F1E" Ref="C82"  Part="1" 
+F 0 "C82" H 6425 6500 50  0000 L CNN
+F 1 "12pF" H 6425 6300 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 6438 6250 50  0001 C CNN
+F 3 "http://search.murata.co.jp/Ceramy/image/img/A01X/partnumbering_e_01.pdf" H 6400 6400 50  0001 C CNN
+F 4 "Fitted" H 6425 6600 50  0001 C CNN "DNP"
+F 5 "CAP CER 12PF 50V C0G/NP0 0603" H 6425 6600 50  0001 C CNN "Description"
+F 6 "490-1405-1-ND" H 6425 6600 50  0001 C CNN "Digi-Key_PN"
+F 7 "125" H 6425 6600 50  0001 C CNN "HighTemp"
+F 8 "-55" H 6425 6600 50  0001 C CNN "LowTemp"
+F 9 "GRM1885C1H120JA01D" H 6425 6600 50  0001 C CNN "MPN"
+F 10 "Murata Electronics North America" H 6425 6600 50  0001 C CNN "Manufacturer"
+	1    6400 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C83
+U 1 1 5A2361A9
+P 7050 6400
+AR Path="/5A2361A9" Ref="C83"  Part="1" 
+AR Path="/59C355B2/5A2361A9" Ref="C83"  Part="1" 
+F 0 "C83" H 7075 6500 50  0000 L CNN
+F 1 "12pF" H 7075 6300 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 7088 6250 50  0001 C CNN
+F 3 "http://search.murata.co.jp/Ceramy/image/img/A01X/partnumbering_e_01.pdf" H 7050 6400 50  0001 C CNN
+F 4 "Fitted" H 7075 6600 50  0001 C CNN "DNP"
+F 5 "CAP CER 12PF 50V C0G/NP0 0603" H 7075 6600 50  0001 C CNN "Description"
+F 6 "490-1405-1-ND" H 7075 6600 50  0001 C CNN "Digi-Key_PN"
+F 7 "125" H 7075 6600 50  0001 C CNN "HighTemp"
+F 8 "-55" H 7075 6600 50  0001 C CNN "LowTemp"
+F 9 "GRM1885C1H120JA01D" H 7075 6600 50  0001 C CNN "MPN"
+F 10 "Murata Electronics North America" H 7075 6600 50  0001 C CNN "Manufacturer"
+	1    7050 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0125
+U 1 1 5A2363C8
+P 6400 6550
+F 0 "#PWR0125" H 6400 6300 50  0001 C CNN
+F 1 "GND" H 6400 6400 50  0000 C CNN
+F 2 "" H 6400 6550 50  0001 C CNN
+F 3 "" H 6400 6550 50  0001 C CNN
+	1    6400 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0126
+U 1 1 5A23642D
+P 7050 6550
+F 0 "#PWR0126" H 7050 6300 50  0001 C CNN
+F 1 "GND" H 7050 6400 50  0000 C CNN
+F 2 "" H 7050 6550 50  0001 C CNN
+F 3 "" H 7050 6550 50  0001 C CNN
+	1    7050 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L RISCV_FPGA_Board-rescue:1k-Resistors_Stackpole_0805 R91
+U 1 1 5A238A13
+P 10250 5450
+F 0 "R91" H 10350 5510 40  0000 C CNN
+F 1 "1k" H 10350 5390 40  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 10375 5215 60  0001 C CNN
+F 3 "https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf" H 10375 5305 60  0001 C CNN
+F 4 "Fitted" H 10350 5610 50  0001 C CNN "DNP"
+F 5 "RES SMD 1K OHM 1% 1/10W 0603" H 10350 5610 50  0001 C CNN "Description"
+F 6 "RMCF0603FT1K00CT-ND" H 10350 5610 50  0001 C CNN "Digi-Key_PN"
+F 7 "155" H 10350 5610 50  0001 C CNN "HighTemp"
+F 8 "-55" H 10350 5610 50  0001 C CNN "LowTemp"
+F 9 "RMCF0603FT1K00" H 10350 5610 50  0001 C CNN "MPN"
+F 10 "Stackpole Electronics Inc." H 10350 5610 50  0001 C CNN "Manufacturer"
+	1    10250 5450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0127
+U 1 1 5A238CEC
+P 10250 5500
+F 0 "#PWR0127" H 10250 5250 50  0001 C CNN
+F 1 "GND" H 10250 5350 50  0000 C CNN
+F 2 "" H 10250 5500 50  0001 C CNN
+F 3 "" H 10250 5500 50  0001 C CNN
+	1    10250 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L RISCV_FPGA_Board-rescue:1k-Resistors_Stackpole_0805 R92
+U 1 1 5A2764EE
+P 12850 4200
+F 0 "R92" H 12950 4260 40  0000 C CNN
+F 1 "1k" H 12950 4140 40  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 12975 3965 60  0001 C CNN
+F 3 "https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf" H 12975 4055 60  0001 C CNN
+F 4 "Fitted" H 12950 4360 50  0001 C CNN "DNP"
+F 5 "RES SMD 1K OHM 1% 1/10W 0603" H 12950 4360 50  0001 C CNN "Description"
+F 6 "RMCF0603FT1K00CT-ND" H 12950 4360 50  0001 C CNN "Digi-Key_PN"
+F 7 "155" H 12950 4360 50  0001 C CNN "HighTemp"
+F 8 "-55" H 12950 4360 50  0001 C CNN "LowTemp"
+F 9 "RMCF0603FT1K00" H 12950 4360 50  0001 C CNN "MPN"
+F 10 "Stackpole Electronics Inc." H 12950 4360 50  0001 C CNN "Manufacturer"
+	1    12850 4200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0129
+U 1 1 5A2764F4
+P 12850 4250
+F 0 "#PWR0129" H 12850 4000 50  0001 C CNN
+F 1 "GND" H 12850 4100 50  0000 C CNN
+F 2 "" H 12850 4250 50  0001 C CNN
+F 3 "" H 12850 4250 50  0001 C CNN
+	1    12850 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L RISCV_FPGA_Board-rescue:1k-Resistors_Stackpole_0805 R93
+U 1 1 5A276602
+P 13100 4200
+F 0 "R93" H 13200 4260 40  0000 C CNN
+F 1 "1k" H 13200 4140 40  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 13225 3965 60  0001 C CNN
+F 3 "https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf" H 13225 4055 60  0001 C CNN
+F 4 "Fitted" H 13200 4360 50  0001 C CNN "DNP"
+F 5 "RES SMD 1K OHM 1% 1/10W 0603" H 13200 4360 50  0001 C CNN "Description"
+F 6 "RMCF0603FT1K00CT-ND" H 13200 4360 50  0001 C CNN "Digi-Key_PN"
+F 7 "155" H 13200 4360 50  0001 C CNN "HighTemp"
+F 8 "-55" H 13200 4360 50  0001 C CNN "LowTemp"
+F 9 "RMCF0603FT1K00" H 13200 4360 50  0001 C CNN "MPN"
+F 10 "Stackpole Electronics Inc." H 13200 4360 50  0001 C CNN "Manufacturer"
+	1    13100 4200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0130
+U 1 1 5A276608
+P 13100 4250
+F 0 "#PWR0130" H 13100 4000 50  0001 C CNN
+F 1 "GND" H 13100 4100 50  0000 C CNN
+F 2 "" H 13100 4250 50  0001 C CNN
+F 3 "" H 13100 4250 50  0001 C CNN
+	1    13100 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L RISCV_FPGA_Board-rescue:Test_Point-Connector_Specialized TP10
+U 1 1 5A291022
+P 3800 6400
+AR Path="/5A291022" Ref="TP10"  Part="1" 
+AR Path="/59C355B2/5A291022" Ref="TP10"  Part="1" 
+F 0 "TP10" V 3800 6589 50  0000 L CNN
+F 1 "TEST_1P" H 3800 6600 50  0001 C CNN
+F 2 "testPoints:TestPoint_Round_20mil" H 4000 6400 50  0001 C CNN
+F 3 "NA" H 4000 6400 50  0001 C CNN
+F 4 "NA" H 3800 6550 50  0001 C CNN "DNP"
+F 5 "NA" H 3800 6550 50  0001 C CNN "Description"
+F 6 "NA" H 3800 6550 50  0001 C CNN "Digi-Key_PN"
+F 7 "NA" H 3800 6550 50  0001 C CNN "HighTemp"
+F 8 "NA" H 3800 6550 50  0001 C CNN "LowTemp"
+F 9 "NA" H 3800 6550 50  0001 C CNN "MPN"
+F 10 "NA" H 3800 6550 50  0001 C CNN "Manufacturer"
+	1    3800 6400
+	0    1    -1   0   
+$EndComp
+$Comp
+L RISCV_FPGA_Board-rescue:Test_Point-Connector_Specialized TP13
+U 1 1 5A291029
+P 3500 6200
+AR Path="/5A291029" Ref="TP13"  Part="1" 
+AR Path="/59C355B2/5A291029" Ref="TP13"  Part="1" 
+F 0 "TP13" V 3400 6250 50  0000 L CNN
+F 1 "TEST_1P" H 3500 6400 50  0001 C CNN
+F 2 "testPoints:TestPoint_Round_20mil" H 3700 6200 50  0001 C CNN
+F 3 "NA" H 3700 6200 50  0001 C CNN
+F 4 "NA" H 3500 6350 50  0001 C CNN "DNP"
+F 5 "NA" H 3500 6350 50  0001 C CNN "Description"
+F 6 "NA" H 3500 6350 50  0001 C CNN "Digi-Key_PN"
+F 7 "NA" H 3500 6350 50  0001 C CNN "HighTemp"
+F 8 "NA" H 3500 6350 50  0001 C CNN "LowTemp"
+F 9 "NA" H 3500 6350 50  0001 C CNN "MPN"
+F 10 "NA" H 3500 6350 50  0001 C CNN "Manufacturer"
+	1    3500 6200
+	0    1    1    0   
+$EndComp
+$Comp
+L RISCV_FPGA_Board-rescue:Test_Point-Connector_Specialized TP12
+U 1 1 5A291030
+P 2250 6200
+AR Path="/5A291030" Ref="TP12"  Part="1" 
+AR Path="/59C355B2/5A291030" Ref="TP12"  Part="1" 
+F 0 "TP12" V 2250 6389 50  0000 L CNN
+F 1 "TEST_1P" H 2250 6400 50  0001 C CNN
+F 2 "testPoints:TestPoint_Round_20mil" H 2450 6200 50  0001 C CNN
+F 3 "NA" H 2450 6200 50  0001 C CNN
+F 4 "NA" H 2250 6350 50  0001 C CNN "DNP"
+F 5 "NA" H 2250 6350 50  0001 C CNN "Description"
+F 6 "NA" H 2250 6350 50  0001 C CNN "Digi-Key_PN"
+F 7 "NA" H 2250 6350 50  0001 C CNN "HighTemp"
+F 8 "NA" H 2250 6350 50  0001 C CNN "LowTemp"
+F 9 "NA" H 2250 6350 50  0001 C CNN "MPN"
+F 10 "NA" H 2250 6350 50  0001 C CNN "Manufacturer"
+	1    2250 6200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L RISCV_FPGA_Board-rescue:Test_Point-Connector_Specialized TP11
+U 1 1 5A291037
+P 3350 6850
+AR Path="/5A291037" Ref="TP11"  Part="1" 
+AR Path="/59C355B2/5A291037" Ref="TP11"  Part="1" 
+F 0 "TP11" V 3350 7039 50  0000 L CNN
+F 1 "TEST_1P" H 3350 7050 50  0001 C CNN
+F 2 "testPoints:TestPoint_Round_20mil" H 3550 6850 50  0001 C CNN
+F 3 "NA" H 3550 6850 50  0001 C CNN
+F 4 "NA" H 3350 7000 50  0001 C CNN "DNP"
+F 5 "NA" H 3350 7000 50  0001 C CNN "Description"
+F 6 "NA" H 3350 7000 50  0001 C CNN "Digi-Key_PN"
+F 7 "NA" H 3350 7000 50  0001 C CNN "HighTemp"
+F 8 "NA" H 3350 7000 50  0001 C CNN "LowTemp"
+F 9 "NA" H 3350 7000 50  0001 C CNN "MPN"
+F 10 "NA" H 3350 7000 50  0001 C CNN "Manufacturer"
+	1    3350 6850
+	0    1    1    0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0131
+U 1 1 5A2D007D
+P 8500 2100
+F 0 "#FLG0131" H 8500 2175 50  0001 C CNN
+F 1 "PWR_FLAG" V 8500 2400 50  0000 C CNN
+F 2 "" H 8500 2100 50  0001 C CNN
+F 3 "" H 8500 2100 50  0001 C CNN
+	1    8500 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0132
+U 1 1 5A2D0107
+P 8600 1250
+F 0 "#FLG0132" H 8600 1325 50  0001 C CNN
+F 1 "PWR_FLAG" V 8600 1600 50  0000 C CNN
+F 2 "" H 8600 1250 50  0001 C CNN
+F 3 "" H 8600 1250 50  0001 C CNN
+	1    8600 1250
+	1    0    0    -1  
+$EndComp
+Text HLabel 5200 3800 0    60   BiDi ~ 0
+USB_D_P
+Text HLabel 5200 3700 0    60   BiDi ~ 0
+USB_D_N
+Text Label 1100 3500 0    60   ~ 0
+VCORE_FT
+Text Label 8750 2650 1    60   ~ 0
+VCORE_FT
+Text Label 7950 1350 0    60   ~ 0
+VPLL_FT
+Text Label 7950 2200 0    60   ~ 0
+VPHY_FT
+Text HLabel 5250 4500 0    60   Input ~ 0
+FTDI_RESETn
+Text HLabel 10600 5200 2    60   Input ~ 0
+UART0_TX
+Text HLabel 10600 5100 2    60   Output ~ 0
+UART0_RX
+Text Notes 500  9850 0    60   ~ 0
+Spare FET
+Text HLabel 13550 3400 2    60   Output ~ 0
+JTAG_TCK
+Text HLabel 13550 3500 2    60   Output ~ 0
+JTAG_TDI
+Text HLabel 13550 3600 2    60   Input ~ 0
+JTAG_TDO
+Text HLabel 13550 3700 2    60   Output ~ 0
+JTAG_TMS
+Text HLabel 13550 3900 2    60   Output ~ 0
+JTAG_RST
+Text Notes 12900 10250 0    60   ~ 0
+200-002
+Wire Wire Line
+	5200 3800 8000 3800
+Wire Wire Line
+	8000 3700 5200 3700
+Wire Wire Line
+	1100 3500 1600 3500
+Wire Wire Line
+	1600 3900 2000 3900
+Wire Wire Line
+	2700 3900 2700 3850
+Wire Wire Line
+	2700 3550 2700 3500
+Wire Wire Line
+	2350 3550 2350 3500
+Wire Wire Line
+	8750 2200 8750 2750
+Wire Wire Line
+	8850 2850 8850 2750
+Wire Wire Line
+	8750 2750 8850 2750
+Wire Wire Line
+	8950 2750 8950 2850
+Wire Wire Line
+	7200 2550 7200 2600
+Wire Wire Line
+	7200 2600 7550 2600
+Wire Wire Line
+	7550 2600 7550 2550
+Wire Wire Line
+	7200 1700 7200 1750
+Wire Wire Line
+	7200 1750 7550 1750
+Wire Wire Line
+	7550 1750 7550 1700
+Wire Wire Line
+	8500 2100 8500 2200
+Wire Wire Line
+	6800 2200 7200 2200
+Wire Wire Line
+	7200 2250 7200 2200
+Wire Wire Line
+	7550 2250 7550 2200
+Wire Wire Line
+	8600 1250 8600 1350
+Wire Wire Line
+	6800 1350 7200 1350
+Wire Wire Line
+	7200 1400 7200 1350
+Wire Wire Line
+	7550 1400 7550 1350
+Wire Wire Line
+	6450 1100 6450 1350
+Wire Wire Line
+	6450 1350 6600 1350
+Wire Wire Line
+	6450 2200 6600 2200
+Wire Wire Line
+	700  3750 700  3800
+Wire Wire Line
+	9100 2850 9100 2750
+Wire Wire Line
+	9100 2750 9200 2750
+Wire Wire Line
+	9400 2000 9400 2200
+Wire Wire Line
+	9300 2850 9300 2750
+Wire Wire Line
+	9200 2850 9200 2750
+Wire Wire Line
+	9600 2250 9600 2200
+Wire Wire Line
+	9400 2200 9600 2200
+Wire Wire Line
+	10500 2200 10500 2250
+Wire Wire Line
+	10200 2250 10200 2200
+Wire Wire Line
+	9900 2200 9900 2250
+Wire Wire Line
+	10500 2550 10500 2600
+Wire Wire Line
+	9600 2600 9900 2600
+Wire Wire Line
+	9600 2600 9600 2550
+Wire Wire Line
+	9900 2550 9900 2600
+Wire Wire Line
+	10200 2550 10200 2600
+Wire Wire Line
+	2000 3550 2000 3500
+Wire Wire Line
+	1600 3550 1600 3500
+Wire Wire Line
+	1600 3850 1600 3900
+Wire Wire Line
+	2000 3850 2000 3900
+Wire Wire Line
+	2350 3900 2350 3850
+Wire Wire Line
+	700  3200 700  3350
+Wire Wire Line
+	7700 4000 8000 4000
+Wire Wire Line
+	7500 4000 7350 4000
+Wire Wire Line
+	8000 4200 7350 4200
+Wire Wire Line
+	7350 4200 7350 4500
+Wire Wire Line
+	7350 4500 6650 4500
+Wire Wire Line
+	6650 4500 6650 4450
+Wire Wire Line
+	6650 4250 6650 4150
+Wire Wire Line
+	5850 4200 5850 4250
+Wire Wire Line
+	5650 4500 5250 4500
+Wire Wire Line
+	3000 6050 3000 6000
+Wire Wire Line
+	8000 5650 6400 5650
+Wire Wire Line
+	6400 5650 6400 6100
+Wire Wire Line
+	6400 6100 6600 6100
+Wire Wire Line
+	7550 6000 8000 6000
+Wire Wire Line
+	7550 6100 7550 6000
+Wire Wire Line
+	6900 6100 7050 6100
+Wire Wire Line
+	7050 6250 7050 6100
+Wire Wire Line
+	10600 5100 10150 5100
+Wire Wire Line
+	10250 5250 10250 5200
+Wire Wire Line
+	10250 5450 10250 5500
+Wire Wire Line
+	13550 3400 10200 3400
+Wire Wire Line
+	10200 3500 12850 3500
+Wire Wire Line
+	10200 3600 13550 3600
+Wire Wire Line
+	10200 3700 13100 3700
+Wire Wire Line
+	12850 4200 12850 4250
+Wire Wire Line
+	13100 4200 13100 4250
+Wire Wire Line
+	12850 4000 12850 3500
+Wire Wire Line
+	13100 4000 13100 3700
+Wire Wire Line
+	10200 3900 13550 3900
+Connection ~ 2350 3900
+Connection ~ 2700 3500
+Connection ~ 2350 3500
+Connection ~ 8750 2750
+Connection ~ 8850 2750
+Connection ~ 7200 2600
+Connection ~ 7200 1750
+Connection ~ 7200 2200
+Connection ~ 7550 2200
+Connection ~ 7200 1350
+Connection ~ 7550 1350
+Connection ~ 6450 1350
+Connection ~ 9300 2750
+Connection ~ 9200 2750
+Connection ~ 9400 2750
+Connection ~ 9400 2200
+Connection ~ 9600 2200
+Connection ~ 10200 2200
+Connection ~ 9900 2200
+Connection ~ 9900 2600
+Connection ~ 10200 2600
+Connection ~ 10500 2600
+Connection ~ 2000 3500
+Connection ~ 1600 3500
+Connection ~ 2000 3900
+Connection ~ 1600 3900
+Connection ~ 700  3350
+Connection ~ 6650 4500
+Connection ~ 7050 6100
+Connection ~ 6400 6100
+Connection ~ 12850 3500
+Connection ~ 13100 3700
+Connection ~ 8600 1350
+Connection ~ 8500 2200
+Text Notes 15200 4800 0    60   ~ 0
+Outputs needed are:\nJTAG for RISC-V\nSPI for FPGA Config\nUART to FPGA
+Wire Wire Line
+	2350 3900 2700 3900
+Wire Wire Line
+	2350 3500 2700 3500
+Wire Wire Line
+	8750 2750 8750 2850
+Wire Wire Line
+	8850 2750 8950 2750
+Wire Wire Line
+	7200 2600 7200 2650
+Wire Wire Line
+	7200 1750 7200 1800
+Wire Wire Line
+	7200 2200 7550 2200
+Wire Wire Line
+	7550 2200 8500 2200
+Wire Wire Line
+	7200 1350 7550 1350
+Wire Wire Line
+	7550 1350 8600 1350
+Wire Wire Line
+	6450 1350 6450 2200
+Wire Wire Line
+	9300 2750 9400 2750
+Wire Wire Line
+	9200 2750 9300 2750
+Wire Wire Line
+	9400 2750 9400 2850
+Wire Wire Line
+	9400 2200 9400 2750
+Wire Wire Line
+	9600 2200 9900 2200
+Wire Wire Line
+	10200 2200 10500 2200
+Wire Wire Line
+	9900 2200 10200 2200
+Wire Wire Line
+	9900 2600 10200 2600
+Wire Wire Line
+	10200 2600 10500 2600
+Wire Wire Line
+	10500 2600 10500 2650
+Wire Wire Line
+	2000 3500 2350 3500
+Wire Wire Line
+	1600 3500 2000 3500
+Wire Wire Line
+	2000 3900 2350 3900
+Wire Wire Line
+	1600 3900 1600 3950
+Wire Wire Line
+	700  3350 700  3450
+Wire Wire Line
+	6650 4500 6050 4500
+Wire Wire Line
+	7050 6100 7550 6100
+Wire Wire Line
+	6400 6100 6400 6250
+Wire Wire Line
+	12850 3500 13550 3500
+Wire Wire Line
+	13100 3700 13550 3700
+Wire Wire Line
+	8600 1350 8600 2850
+Wire Wire Line
+	8500 2200 8500 2850
+$Comp
+L RISCV_FPGA_Board-rescue:1k-Resistors_Stackpole_0805 R47
+U 1 1 5B1CF5DE
+P 10200 3400
+F 0 "R47" H 10205 3370 40  0000 C CNN
+F 1 "33" H 10400 3370 40  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 10325 3165 60  0001 C CNN
+F 3 "https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf" H 10325 3255 60  0001 C CNN
+F 4 "Fitted" H 10205 3470 50  0001 C CNN "DNP"
+F 5 "RES SMD 33 OHM 1% 1/10W 0603" H 10205 3470 50  0001 C CNN "Description"
+F 6 "RMCF0603FT33R0CT-ND" H 10205 3470 50  0001 C CNN "Digi-Key_PN"
+F 7 "155" H 10205 3470 50  0001 C CNN "HighTemp"
+F 8 "-55" H 10205 3470 50  0001 C CNN "LowTemp"
+F 9 "RMCF0603FT33R0" H 10205 3470 50  0001 C CNN "MPN"
+F 10 "Stackpole Electronics Inc." H 10205 3470 50  0001 C CNN "Manufacturer"
+	1    10200 3400
+	-1   0    0    1   
+$EndComp
+$Comp
+L RISCV_FPGA_Board-rescue:1k-Resistors_Stackpole_0805 R48
+U 1 1 5B1CF5EC
+P 10200 3500
+F 0 "R48" H 10205 3470 40  0000 C CNN
+F 1 "33" H 10400 3470 40  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 10325 3265 60  0001 C CNN
+F 3 "https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf" H 10325 3355 60  0001 C CNN
+F 4 "Fitted" H 10205 3570 50  0001 C CNN "DNP"
+F 5 "RES SMD 33 OHM 1% 1/10W 0603" H 10205 3570 50  0001 C CNN "Description"
+F 6 "RMCF0603FT33R0CT-ND" H 10205 3570 50  0001 C CNN "Digi-Key_PN"
+F 7 "155" H 10205 3570 50  0001 C CNN "HighTemp"
+F 8 "-55" H 10205 3570 50  0001 C CNN "LowTemp"
+F 9 "RMCF0603FT33R0" H 10205 3570 50  0001 C CNN "MPN"
+F 10 "Stackpole Electronics Inc." H 10205 3570 50  0001 C CNN "Manufacturer"
+	1    10200 3500
+	-1   0    0    1   
+$EndComp
+$Comp
+L RISCV_FPGA_Board-rescue:1k-Resistors_Stackpole_0805 R49
+U 1 1 5B1D8222
+P 10200 3600
+F 0 "R49" H 10205 3570 40  0000 C CNN
+F 1 "33" H 10400 3570 40  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 10325 3365 60  0001 C CNN
+F 3 "https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf" H 10325 3455 60  0001 C CNN
+F 4 "Fitted" H 10205 3670 50  0001 C CNN "DNP"
+F 5 "RES SMD 33 OHM 1% 1/10W 0603" H 10205 3670 50  0001 C CNN "Description"
+F 6 "RMCF0603FT33R0CT-ND" H 10205 3670 50  0001 C CNN "Digi-Key_PN"
+F 7 "155" H 10205 3670 50  0001 C CNN "HighTemp"
+F 8 "-55" H 10205 3670 50  0001 C CNN "LowTemp"
+F 9 "RMCF0603FT33R0" H 10205 3670 50  0001 C CNN "MPN"
+F 10 "Stackpole Electronics Inc." H 10205 3670 50  0001 C CNN "Manufacturer"
+	1    10200 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L RISCV_FPGA_Board-rescue:1k-Resistors_Stackpole_0805 R50
+U 1 1 5B1D8230
+P 10200 3700
+F 0 "R50" H 10205 3670 40  0000 C CNN
+F 1 "33" H 10400 3670 40  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 10325 3465 60  0001 C CNN
+F 3 "https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf" H 10325 3555 60  0001 C CNN
+F 4 "Fitted" H 10205 3770 50  0001 C CNN "DNP"
+F 5 "RES SMD 33 OHM 1% 1/10W 0603" H 10205 3770 50  0001 C CNN "Description"
+F 6 "RMCF0603FT33R0CT-ND" H 10205 3770 50  0001 C CNN "Digi-Key_PN"
+F 7 "155" H 10205 3770 50  0001 C CNN "HighTemp"
+F 8 "-55" H 10205 3770 50  0001 C CNN "LowTemp"
+F 9 "RMCF0603FT33R0" H 10205 3770 50  0001 C CNN "MPN"
+F 10 "Stackpole Electronics Inc." H 10205 3770 50  0001 C CNN "Manufacturer"
+	1    10200 3700
+	-1   0    0    1   
+$EndComp
+$Comp
+L RISCV_FPGA_Board-rescue:1k-Resistors_Stackpole_0805 R51
+U 1 1 5B1E0EC2
+P 10200 3900
+F 0 "R51" H 10205 3870 40  0000 C CNN
+F 1 "33" H 10400 3870 40  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 10325 3665 60  0001 C CNN
+F 3 "https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf" H 10325 3755 60  0001 C CNN
+F 4 "Fitted" H 10205 3970 50  0001 C CNN "DNP"
+F 5 "RES SMD 33 OHM 1% 1/10W 0603" H 10205 3970 50  0001 C CNN "Description"
+F 6 "RMCF0603FT33R0CT-ND" H 10205 3970 50  0001 C CNN "Digi-Key_PN"
+F 7 "155" H 10205 3970 50  0001 C CNN "HighTemp"
+F 8 "-55" H 10205 3970 50  0001 C CNN "LowTemp"
+F 9 "RMCF0603FT33R0" H 10205 3970 50  0001 C CNN "MPN"
+F 10 "Stackpole Electronics Inc." H 10205 3970 50  0001 C CNN "Manufacturer"
+	1    10200 3900
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3V3 #PWR0128
+U 1 1 5AE187DC
+P 6450 1100
+F 0 "#PWR0128" H 6450 950 50  0001 C CNN
+F 1 "+3V3" H 6450 1240 50  0000 C CNN
+F 2 "" H 6450 1100 50  0001 C CNN
+F 3 "" H 6450 1100 50  0001 C CNN
+	1    6450 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0146
+U 1 1 5AE18A87
+P 9400 2000
+F 0 "#PWR0146" H 9400 1850 50  0001 C CNN
+F 1 "+3V3" H 9400 2140 50  0000 C CNN
+F 2 "" H 9400 2000 50  0001 C CNN
+F 3 "" H 9400 2000 50  0001 C CNN
+	1    9400 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L RISCV_FPGA_Board-rescue:FDG1024NZ-Transistor_FET Q4
+U 2 1 5AE2EFF2
+P 650 10250
+F 0 "Q4" H 856 10297 50  0000 L CNN
+F 1 "DMN63D8LDW-7" H 856 10204 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 850 10175 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/FD/FDG1024NZ.pdf" H 650 10250 50  0001 L CNN
+	2    650  10250
+	1    0    0    -1  
+$EndComp
+NoConn ~ 750  10050
+NoConn ~ 500  10250
+NoConn ~ 750  10450
+$Comp
+L power:+3V3 #PWR0161
+U 1 1 5AE5C4B7
+P 6650 4150
+F 0 "#PWR0161" H 6650 4000 50  0001 C CNN
+F 1 "+3V3" H 6650 4290 50  0000 C CNN
+F 2 "" H 6650 4150 50  0001 C CNN
+F 3 "" H 6650 4150 50  0001 C CNN
+	1    6650 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 3400 9800 3400
+Wire Wire Line
+	9800 3500 10000 3500
+Wire Wire Line
+	10000 3600 9800 3600
+Wire Wire Line
+	9800 3700 10000 3700
+Wire Wire Line
+	10000 3900 9800 3900
+NoConn ~ 9800 3800
+NoConn ~ 9800 4000
+NoConn ~ 9800 4100
+$Comp
+L RISCV_FPGA_Board-rescue:1k-Resistors_Stackpole_0805 R90
+U 1 1 5AEC0BDF
+P 10200 4250
+F 0 "R90" H 10205 4220 40  0000 C CNN
+F 1 "33" H 10400 4220 40  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 10325 4015 60  0001 C CNN
+F 3 "https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf" H 10325 4105 60  0001 C CNN
+F 4 "Fitted" H 10205 4320 50  0001 C CNN "DNP"
+F 5 "RES SMD 33 OHM 1% 1/10W 0603" H 10205 4320 50  0001 C CNN "Description"
+F 6 "RMCF0603FT33R0CT-ND" H 10205 4320 50  0001 C CNN "Digi-Key_PN"
+F 7 "155" H 10205 4320 50  0001 C CNN "HighTemp"
+F 8 "-55" H 10205 4320 50  0001 C CNN "LowTemp"
+F 9 "RMCF0603FT33R0" H 10205 4320 50  0001 C CNN "MPN"
+F 10 "Stackpole Electronics Inc." H 10205 4320 50  0001 C CNN "Manufacturer"
+	1    10200 4250
+	-1   0    0    1   
+$EndComp
+$Comp
+L RISCV_FPGA_Board-rescue:1k-Resistors_Stackpole_0805 R95
+U 1 1 5AEC0BED
+P 10200 4350
+F 0 "R95" H 10205 4320 40  0000 C CNN
+F 1 "33" H 10400 4320 40  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 10325 4115 60  0001 C CNN
+F 3 "https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf" H 10325 4205 60  0001 C CNN
+F 4 "Fitted" H 10205 4420 50  0001 C CNN "DNP"
+F 5 "RES SMD 33 OHM 1% 1/10W 0603" H 10205 4420 50  0001 C CNN "Description"
+F 6 "RMCF0603FT33R0CT-ND" H 10205 4420 50  0001 C CNN "Digi-Key_PN"
+F 7 "155" H 10205 4420 50  0001 C CNN "HighTemp"
+F 8 "-55" H 10205 4420 50  0001 C CNN "LowTemp"
+F 9 "RMCF0603FT33R0" H 10205 4420 50  0001 C CNN "MPN"
+F 10 "Stackpole Electronics Inc." H 10205 4420 50  0001 C CNN "Manufacturer"
+	1    10200 4350
+	-1   0    0    1   
+$EndComp
+$Comp
+L RISCV_FPGA_Board-rescue:1k-Resistors_Stackpole_0805 R100
+U 1 1 5AEC0BFB
+P 10200 4450
+F 0 "R100" H 10205 4420 40  0000 C CNN
+F 1 "33" H 10400 4420 40  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 10325 4215 60  0001 C CNN
+F 3 "https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf" H 10325 4305 60  0001 C CNN
+F 4 "Fitted" H 10205 4520 50  0001 C CNN "DNP"
+F 5 "RES SMD 33 OHM 1% 1/10W 0603" H 10205 4520 50  0001 C CNN "Description"
+F 6 "RMCF0603FT33R0CT-ND" H 10205 4520 50  0001 C CNN "Digi-Key_PN"
+F 7 "155" H 10205 4520 50  0001 C CNN "HighTemp"
+F 8 "-55" H 10205 4520 50  0001 C CNN "LowTemp"
+F 9 "RMCF0603FT33R0" H 10205 4520 50  0001 C CNN "MPN"
+F 10 "Stackpole Electronics Inc." H 10205 4520 50  0001 C CNN "Manufacturer"
+	1    10200 4450
+	-1   0    0    1   
+$EndComp
+$Comp
+L RISCV_FPGA_Board-rescue:1k-Resistors_Stackpole_0805 R101
+U 1 1 5AEC0C09
+P 10200 4550
+F 0 "R101" H 10205 4520 40  0000 C CNN
+F 1 "33" H 10400 4520 40  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 10325 4315 60  0001 C CNN
+F 3 "https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf" H 10325 4405 60  0001 C CNN
+F 4 "Fitted" H 10205 4620 50  0001 C CNN "DNP"
+F 5 "RES SMD 33 OHM 1% 1/10W 0603" H 10205 4620 50  0001 C CNN "Description"
+F 6 "RMCF0603FT33R0CT-ND" H 10205 4620 50  0001 C CNN "Digi-Key_PN"
+F 7 "155" H 10205 4620 50  0001 C CNN "HighTemp"
+F 8 "-55" H 10205 4620 50  0001 C CNN "LowTemp"
+F 9 "RMCF0603FT33R0" H 10205 4620 50  0001 C CNN "MPN"
+F 10 "Stackpole Electronics Inc." H 10205 4620 50  0001 C CNN "Manufacturer"
+	1    10200 4550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10000 4250 9800 4250
+Wire Wire Line
+	9800 4350 10000 4350
+Wire Wire Line
+	10000 4450 9800 4450
+Wire Wire Line
+	9800 4550 10000 4550
+Text Label 10350 4250 0    60   ~ 0
+FTDI_SCLK
+Text Label 10350 4350 0    60   ~ 0
+FTDI_SDO
+Text Label 10350 4450 0    60   ~ 0
+FTDI_SDI
+Text Label 10350 4550 0    60   ~ 0
+FTDI_CS
+Text HLabel 11450 4250 2    60   Output ~ 0
+FTDI_SCLK
+Text HLabel 11450 4350 2    60   Output ~ 0
+FTDI_SDO
+Text HLabel 11450 4450 2    60   Input ~ 0
+FTDI_SDI
+Text HLabel 11450 4550 2    60   Output ~ 0
+FTDI_CS
+Wire Wire Line
+	11450 4250 10200 4250
+Wire Wire Line
+	10200 4350 11450 4350
+Wire Wire Line
+	11450 4450 10200 4450
+Wire Wire Line
+	10200 4550 10850 4550
+NoConn ~ 9800 4750
+Wire Wire Line
+	9950 5100 9800 5100
+$Comp
+L RISCV_FPGA_Board-rescue:1k-Resistors_Stackpole_0805 R69
+U 1 1 5AF1DD3C
+P 10150 5100
+F 0 "R69" H 10155 5070 40  0000 C CNN
+F 1 "33" H 10350 5070 40  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 10275 4865 60  0001 C CNN
+F 3 "https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf" H 10275 4955 60  0001 C CNN
+F 4 "Fitted" H 10155 5170 50  0001 C CNN "DNP"
+F 5 "RES SMD 33 OHM 1% 1/10W 0603" H 10155 5170 50  0001 C CNN "Description"
+F 6 "RMCF0603FT33R0CT-ND" H 10155 5170 50  0001 C CNN "Digi-Key_PN"
+F 7 "155" H 10155 5170 50  0001 C CNN "HighTemp"
+F 8 "-55" H 10155 5170 50  0001 C CNN "LowTemp"
+F 9 "RMCF0603FT33R0" H 10155 5170 50  0001 C CNN "MPN"
+F 10 "Stackpole Electronics Inc." H 10155 5170 50  0001 C CNN "Manufacturer"
+	1    10150 5100
+	-1   0    0    1   
+$EndComp
+$Comp
+L RISCV_FPGA_Board-rescue:1k-Resistors_Stackpole_0805 R77
+U 1 1 5AF1DDDA
+P 10150 5200
+F 0 "R77" H 10155 5170 40  0000 C CNN
+F 1 "33" H 10350 5170 40  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 10275 4965 60  0001 C CNN
+F 3 "https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf" H 10275 5055 60  0001 C CNN
+F 4 "Fitted" H 10155 5270 50  0001 C CNN "DNP"
+F 5 "RES SMD 33 OHM 1% 1/10W 0603" H 10155 5270 50  0001 C CNN "Description"
+F 6 "RMCF0603FT33R0CT-ND" H 10155 5270 50  0001 C CNN "Digi-Key_PN"
+F 7 "155" H 10155 5270 50  0001 C CNN "HighTemp"
+F 8 "-55" H 10155 5270 50  0001 C CNN "LowTemp"
+F 9 "RMCF0603FT33R0" H 10155 5270 50  0001 C CNN "MPN"
+F 10 "Stackpole Electronics Inc." H 10155 5270 50  0001 C CNN "Manufacturer"
+	1    10150 5200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9950 5200 9800 5200
+Wire Wire Line
+	10150 5200 10250 5200
+Connection ~ 10250 5200
+Wire Wire Line
+	10250 5200 10600 5200
+NoConn ~ 9800 5300
+NoConn ~ 9800 5400
+NoConn ~ 9800 5500
+NoConn ~ 9800 5600
+NoConn ~ 9800 5700
+NoConn ~ 9800 5800
+$Comp
+L RISCV_FPGA_Board-rescue:1k-Resistors_Stackpole_0805 R102
+U 1 1 5AF55797
+P 10250 6300
+F 0 "R102" H 10350 6360 40  0000 C CNN
+F 1 "1k" H 10350 6240 40  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 10375 6065 60  0001 C CNN
+F 3 "https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf" H 10375 6155 60  0001 C CNN
+F 4 "Fitted" H 10350 6460 50  0001 C CNN "DNP"
+F 5 "RES SMD 1K OHM 1% 1/10W 0603" H 10350 6460 50  0001 C CNN "Description"
+F 6 "RMCF0603FT1K00CT-ND" H 10350 6460 50  0001 C CNN "Digi-Key_PN"
+F 7 "155" H 10350 6460 50  0001 C CNN "HighTemp"
+F 8 "-55" H 10350 6460 50  0001 C CNN "LowTemp"
+F 9 "RMCF0603FT1K00" H 10350 6460 50  0001 C CNN "MPN"
+F 10 "Stackpole Electronics Inc." H 10350 6460 50  0001 C CNN "Manufacturer"
+	1    10250 6300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0162
+U 1 1 5AF5579E
+P 10250 6350
+F 0 "#PWR0162" H 10250 6100 50  0001 C CNN
+F 1 "GND" H 10250 6200 50  0000 C CNN
+F 2 "" H 10250 6350 50  0001 C CNN
+F 3 "" H 10250 6350 50  0001 C CNN
+	1    10250 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10250 6100 10250 6050
+Wire Wire Line
+	10250 6300 10250 6350
+Wire Wire Line
+	9950 5950 9800 5950
+$Comp
+L RISCV_FPGA_Board-rescue:1k-Resistors_Stackpole_0805 R78
+U 1 1 5AF557B1
+P 10150 5950
+F 0 "R78" H 10155 5920 40  0000 C CNN
+F 1 "33" H 10350 5920 40  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 10275 5715 60  0001 C CNN
+F 3 "https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf" H 10275 5805 60  0001 C CNN
+F 4 "Fitted" H 10155 6020 50  0001 C CNN "DNP"
+F 5 "RES SMD 33 OHM 1% 1/10W 0603" H 10155 6020 50  0001 C CNN "Description"
+F 6 "RMCF0603FT33R0CT-ND" H 10155 6020 50  0001 C CNN "Digi-Key_PN"
+F 7 "155" H 10155 6020 50  0001 C CNN "HighTemp"
+F 8 "-55" H 10155 6020 50  0001 C CNN "LowTemp"
+F 9 "RMCF0603FT33R0" H 10155 6020 50  0001 C CNN "MPN"
+F 10 "Stackpole Electronics Inc." H 10155 6020 50  0001 C CNN "Manufacturer"
+	1    10150 5950
+	-1   0    0    1   
+$EndComp
+$Comp
+L RISCV_FPGA_Board-rescue:1k-Resistors_Stackpole_0805 R85
+U 1 1 5AF557BF
+P 10150 6050
+F 0 "R85" H 10155 6020 40  0000 C CNN
+F 1 "33" H 10350 6020 40  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 10275 5815 60  0001 C CNN
+F 3 "https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf" H 10275 5905 60  0001 C CNN
+F 4 "Fitted" H 10155 6120 50  0001 C CNN "DNP"
+F 5 "RES SMD 33 OHM 1% 1/10W 0603" H 10155 6120 50  0001 C CNN "Description"
+F 6 "RMCF0603FT33R0CT-ND" H 10155 6120 50  0001 C CNN "Digi-Key_PN"
+F 7 "155" H 10155 6120 50  0001 C CNN "HighTemp"
+F 8 "-55" H 10155 6120 50  0001 C CNN "LowTemp"
+F 9 "RMCF0603FT33R0" H 10155 6120 50  0001 C CNN "MPN"
+F 10 "Stackpole Electronics Inc." H 10155 6120 50  0001 C CNN "Manufacturer"
+	1    10150 6050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9950 6050 9800 6050
+Wire Wire Line
+	10150 6050 10250 6050
+Connection ~ 10250 6050
+Wire Wire Line
+	8450 7500 8450 7350
+Connection ~ 8450 7500
+Wire Wire Line
+	9250 7500 9250 7350
+Wire Wire Line
+	8450 7500 8550 7500
+Wire Wire Line
+	9150 7350 9150 7500
+Connection ~ 9150 7500
+Wire Wire Line
+	9150 7500 9250 7500
+Wire Wire Line
+	9050 7350 9050 7500
+Connection ~ 9050 7500
+Wire Wire Line
+	9050 7500 9150 7500
+Wire Wire Line
+	8950 7500 8950 7350
+Wire Wire Line
+	8850 7350 8850 7500
+Wire Wire Line
+	8750 7350 8750 7500
+Wire Wire Line
+	8650 7500 8650 7350
+Wire Wire Line
+	8550 7350 8550 7500
+Connection ~ 8550 7500
+Wire Wire Line
+	8550 7500 8650 7500
+Connection ~ 8650 7500
+Wire Wire Line
+	8650 7500 8750 7500
+Connection ~ 8750 7500
+Wire Wire Line
+	8750 7500 8850 7500
+Connection ~ 8850 7500
+Wire Wire Line
+	8850 7500 8950 7500
+Connection ~ 8950 7500
+Wire Wire Line
+	8950 7500 9050 7500
+Wire Wire Line
+	700  3350 8000 3350
+Wire Wire Line
+	2700 3500 8000 3500
+NoConn ~ 9800 6150
+NoConn ~ 9800 6250
+NoConn ~ 9800 6350
+NoConn ~ 9800 6450
+NoConn ~ 9800 6550
+NoConn ~ 9800 6650
+NoConn ~ 9800 6800
+NoConn ~ 9800 6900
+Wire Wire Line
+	3000 5700 3000 5600
+Wire Wire Line
+	3000 5600 2800 5600
+Wire Wire Line
+	2800 5600 2800 6200
+$Comp
+L power:+3V3 #PWR0163
+U 1 1 5B0752F5
+P 2800 5600
+F 0 "#PWR0163" H 2800 5450 50  0001 C CNN
+F 1 "+3V3" H 2800 5740 50  0000 C CNN
+F 2 "" H 2800 5600 50  0001 C CNN
+F 3 "" H 2800 5600 50  0001 C CNN
+	1    2800 5600
+	1    0    0    -1  
+$EndComp
+Connection ~ 2800 5600
+Wire Wire Line
+	2800 6800 2800 6900
+Wire Wire Line
+	2250 6400 2400 6400
+Wire Wire Line
+	8000 5100 3200 5100
+Wire Wire Line
+	2250 5100 2250 6200
+Wire Wire Line
+	8000 5200 3500 5200
+Wire Wire Line
+	3500 5200 3500 6200
+Wire Wire Line
+	3500 6400 3200 6400
+Wire Wire Line
+	3200 4900 3200 5100
+Connection ~ 3200 5100
+Wire Wire Line
+	3200 5100 2250 5100
+Wire Wire Line
+	3500 4900 3500 5200
+Connection ~ 3500 5200
+Wire Wire Line
+	3800 5300 8000 5300
+Wire Wire Line
+	3200 4700 3200 4600
+Wire Wire Line
+	3200 4600 3500 4600
+Wire Wire Line
+	3500 4600 3500 4700
+$Comp
+L power:+3V3 #PWR0164
+U 1 1 5B12C0F2
+P 3200 4550
+F 0 "#PWR0164" H 3200 4400 50  0001 C CNN
+F 1 "+3V3" H 3200 4690 50  0000 C CNN
+F 2 "" H 3200 4550 50  0001 C CNN
+F 3 "" H 3200 4550 50  0001 C CNN
+	1    3200 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 4550 3200 4600
+Connection ~ 3200 4600
+Wire Wire Line
+	3800 6600 3600 6600
+Wire Wire Line
+	3800 5300 3800 6400
+Wire Wire Line
+	3200 6500 3800 6500
+Connection ~ 3800 6500
+Wire Wire Line
+	3800 6500 3800 6600
+Wire Wire Line
+	3400 6600 3350 6600
+Wire Wire Line
+	3350 6950 3350 6850
+Connection ~ 3350 6600
+Wire Wire Line
+	3350 6600 3200 6600
+$Comp
+L power:+3V3 #PWR0165
+U 1 1 5B150267
+P 3700 7150
+F 0 "#PWR0165" H 3700 7000 50  0001 C CNN
+F 1 "+3V3" H 3700 7290 50  0000 C CNN
+F 2 "" H 3700 7150 50  0001 C CNN
+F 3 "" H 3700 7150 50  0001 C CNN
+	1    3700 7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 7150 3700 7200
+Wire Wire Line
+	3700 7200 3350 7200
+Wire Wire Line
+	3350 7200 3350 7150
+Connection ~ 3350 6850
+Wire Wire Line
+	3350 6850 3350 6600
+Connection ~ 3800 6400
+Wire Wire Line
+	3800 6400 3800 6500
+Connection ~ 3500 6200
+Wire Wire Line
+	3500 6200 3500 6400
+Connection ~ 2250 6200
+Wire Wire Line
+	2250 6200 2250 6400
+Wire Wire Line
+	8450 7500 7900 7500
+Wire Wire Line
+	7900 7500 7900 7650
+Wire Wire Line
+	7900 7500 7900 6700
+Connection ~ 7900 7500
+Wire Wire Line
+	7900 6700 8000 6700
+Text Label 11100 5950 2    60   ~ 0
+FTDI_UART2_TX
+Text Label 11100 6050 2    60   ~ 0
+FTDI_UART2_RX
+Wire Wire Line
+	10150 5950 11400 5950
+Wire Wire Line
+	10250 6050 11400 6050
+$Comp
+L Connector_Generic:Conn_01x02 J8
+U 1 1 5B339FF4
+P 11600 5950
+F 0 "J8" H 11600 6050 50  0000 C CNN
+F 1 "M50-3530242" H 11600 5950 60  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch1.27mm" H 11600 5950 50  0001 C CNN
+F 3 "https://cdn.harwin.com/pdfs/C029XX_M50_and_M52_Series_Connectors.pdf" H 11600 5950 50  0001 C CNN
+F 4 "Harwin Inc." H 11600 6250 50  0001 C CNN "Manufacturer"
+F 5 "DNP" H 11750 5900 50  0000 C CNN "DNP"
+F 6 "M50-3530242" H 11600 5750 50  0000 C CNN "MPN"
+F 7 "CONN HDR 1.27MM T/H AU 2POS" H 11600 6250 50  0001 C CNN "Description"
+F 8 "952-3598-ND" H 11600 6250 50  0001 C CNN "Digi-Key_PN"
+F 9 "105" H 11600 6250 50  0001 C CNN "HighTemp"
+F 10 "-40" H 11600 6250 50  0001 C CNN "LowTemp"
+	1    11600 5950
+	1    0    0    -1  
+$EndComp
+Text HLabel 11500 4950 2    60   Input ~ 0
+CRESET_B
+Text HLabel 11500 4850 2    60   Input ~ 0
+CDONE
+Wire Wire Line
+	11500 4950 10200 4950
+Wire Wire Line
+	9800 4850 10000 4850
+$Comp
+L RISCV_FPGA_Board-rescue:FT4232HL-REEL-FTDICustom U3
+U 1 1 5A9284D6
+P 8900 5350
+F 0 "U3" H 8300 7700 60  0000 C CNN
+F 1 "FT4232HL-REEL" V 9000 5650 60  0000 C CNN
+F 2 "digikey-footprints:64-LQFP_(10x10)" H 9100 5550 60  0001 L CNN
+F 3 "http://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT4232H.pdf" H 9100 5650 60  0001 L CNN
+F 4 "768-1026-1-ND" H 9100 5750 60  0001 L CNN "Digi-Key_PN"
+F 5 "FT4232HL-REEL" H 9100 5850 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 9100 5950 60  0001 L CNN "Category"
+F 7 "Interface - Controllers" H 9100 6050 60  0001 L CNN "Family"
+F 8 "http://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT4232H.pdf" H 9100 6150 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/ftdi-future-technology-devices-international-ltd/FT4232HL-REEL/768-1026-1-ND/1986059" H 9100 6250 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC USB HS QUAD UART/SYNC 64-LQFP" H 9100 6350 60  0001 L CNN "Description"
+F 11 "FTDI, Future Technology Devices International Ltd" H 9100 6450 60  0001 L CNN "Manufacturer"
+F 12 "Fitted" H -4650 50  50  0001 C CNN "DNP"
+	1    8900 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L RISCV_FPGA_Board-rescue:1k-Resistors_Stackpole_0805 R116
+U 1 1 5B4C7CF6
+P 10200 4850
+F 0 "R116" H 10205 4820 40  0000 C CNN
+F 1 "33" H 10400 4820 40  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 10325 4615 60  0001 C CNN
+F 3 "https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf" H 10325 4705 60  0001 C CNN
+F 4 "Fitted" H 10205 4920 50  0001 C CNN "DNP"
+F 5 "RES SMD 33 OHM 1% 1/10W 0603" H 10205 4920 50  0001 C CNN "Description"
+F 6 "RMCF0603FT33R0CT-ND" H 10205 4920 50  0001 C CNN "Digi-Key_PN"
+F 7 "155" H 10205 4920 50  0001 C CNN "HighTemp"
+F 8 "-55" H 10205 4920 50  0001 C CNN "LowTemp"
+F 9 "RMCF0603FT33R0" H 10205 4920 50  0001 C CNN "MPN"
+F 10 "Stackpole Electronics Inc." H 10205 4920 50  0001 C CNN "Manufacturer"
+	1    10200 4850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10200 4850 11500 4850
+$Comp
+L RISCV_FPGA_Board-rescue:1k-Resistors_Stackpole_0805 R117
+U 1 1 5B4C7D88
+P 10200 4950
+F 0 "R117" H 10205 4920 40  0000 C CNN
+F 1 "33" H 10400 4920 40  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 10325 4715 60  0001 C CNN
+F 3 "https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf" H 10325 4805 60  0001 C CNN
+F 4 "Fitted" H 10205 5020 50  0001 C CNN "DNP"
+F 5 "RES SMD 33 OHM 1% 1/10W 0603" H 10205 5020 50  0001 C CNN "Description"
+F 6 "RMCF0603FT33R0CT-ND" H 10205 5020 50  0001 C CNN "Digi-Key_PN"
+F 7 "155" H 10205 5020 50  0001 C CNN "HighTemp"
+F 8 "-55" H 10205 5020 50  0001 C CNN "LowTemp"
+F 9 "RMCF0603FT33R0" H 10205 5020 50  0001 C CNN "MPN"
+F 10 "Stackpole Electronics Inc." H 10205 5020 50  0001 C CNN "Manufacturer"
+	1    10200 4950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10000 4950 9800 4950
+$Comp
+L RISCV_FPGA_Board-rescue:1k-Resistors_Stackpole_0805 R115
+U 1 1 5B4C7E14
+P 10200 4650
+F 0 "R115" H 10205 4620 40  0000 C CNN
+F 1 "33" H 10400 4620 40  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 10325 4415 60  0001 C CNN
+F 3 "https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf" H 10325 4505 60  0001 C CNN
+F 4 "DNP" H 10100 4700 50  0000 C CNN "DNP"
+F 5 "RES SMD 33 OHM 1% 1/10W 0603" H 10205 4720 50  0001 C CNN "Description"
+F 6 "RMCF0603FT33R0CT-ND" H 10205 4720 50  0001 C CNN "Digi-Key_PN"
+F 7 "155" H 10205 4720 50  0001 C CNN "HighTemp"
+F 8 "-55" H 10205 4720 50  0001 C CNN "LowTemp"
+F 9 "RMCF0603FT33R0" H 10205 4720 50  0001 C CNN "MPN"
+F 10 "Stackpole Electronics Inc." H 10205 4720 50  0001 C CNN "Manufacturer"
+	1    10200 4650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10000 4650 9800 4650
+Wire Wire Line
+	10200 4650 10850 4650
+Wire Wire Line
+	10850 4650 10850 4550
+Connection ~ 10850 4550
+Wire Wire Line
+	10850 4550 11450 4550
+$EndSCHEMATC

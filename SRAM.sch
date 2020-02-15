@@ -1,0 +1,482 @@
+EESchema Schematic File Version 4
+LIBS:RISCV_FPGA_Board-cache
+EELAYER 26 0
+EELAYER END
+$Descr USLedger 17000 11000
+encoding utf-8
+Sheet 8 9
+Title "fRISCY"
+Date "2017-12-23"
+Rev "1.1"
+Comp ""
+Comment1 "FPGA + RISC-V Digital Processing Board"
+Comment2 "SRAM"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR0191
+U 1 1 5A18B8A5
+P 7900 6750
+F 0 "#PWR0191" H 7900 6500 50  0001 C CNN
+F 1 "GND" H 7900 6600 50  0000 C CNN
+F 2 "" H 7900 6750 50  0001 C CNN
+F 3 "" H 7900 6750 50  0001 C CNN
+	1    7900 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0192
+U 1 1 5A18B8EF
+P 6550 3800
+F 0 "#PWR0192" H 6550 3650 50  0001 C CNN
+F 1 "+3V3" H 6550 3940 50  0000 C CNN
+F 2 "" H 6550 3800 50  0001 C CNN
+F 3 "" H 6550 3800 50  0001 C CNN
+	1    6550 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0193
+U 1 1 5A18B8FD
+P 8150 4300
+F 0 "#PWR0193" H 8150 4050 50  0001 C CNN
+F 1 "GND" H 8150 4150 50  0000 C CNN
+F 2 "" H 8150 4300 50  0001 C CNN
+F 3 "" H 8150 4300 50  0001 C CNN
+	1    8150 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Resistors_Stackpole_0805:1k R61
+U 1 1 5A18DAE4
+P 10250 4000
+F 0 "R61" V 10400 3930 40  0000 C CNN
+F 1 "10k" H 10290 4070 40  0000 C CNN
+F 2 "Resistors_SMD:R_0603" H 10375 3765 60  0001 C CNN
+F 3 "https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf" H 10375 3855 60  0001 C CNN
+F 4 "Fitted" H 10400 4030 50  0001 C CNN "DNP"
+F 5 "RES SMD 10K OHM 1% 1/10W 0603" H 10400 4030 50  0001 C CNN "Description"
+F 6 "RMCF0603FT10K0CT-ND" H 10400 4030 50  0001 C CNN "Digi-Key_PN"
+F 7 "155" H 10400 4030 50  0001 C CNN "HighTemp"
+F 8 "-55" H 10400 4030 50  0001 C CNN "LowTemp"
+F 9 "RMCF0603FT10K0 " H 10400 4030 50  0001 C CNN "MPN"
+F 10 "Stackpole Electronics Inc." H 10400 4030 50  0001 C CNN "Manufacturer"
+	1    10250 4000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Ferrite_Bead FB6
+U 1 1 5A18DAEB
+P 7200 3900
+AR Path="/5A18DAEB" Ref="FB6"  Part="1" 
+AR Path="/5A1856B9/5A18DAEB" Ref="FB6"  Part="1" 
+F 0 "FB6" V 7050 3925 50  0000 C CNN
+F 1 "600Ohm/100MHz" V 6950 3900 50  0000 C CNN
+F 2 "Inductors_SMD:L_0603" V 7130 3900 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/beads_commercial_power_mpz1608_en.pdf" H 7200 3900 50  0001 C CNN
+F 4 "Fitted" H 7050 4025 50  0001 C CNN "DNP"
+F 5 "FERRITE BEAD 600 OHM 0603 1LN" H 7050 4025 50  0001 C CNN "Description"
+F 6 "445-2205-1-ND" H 7050 4025 50  0001 C CNN "Digi-Key_PN"
+F 7 "125" H 7050 4025 50  0001 C CNN "HighTemp"
+F 8 "-55" H 7050 4025 50  0001 C CNN "LowTemp"
+F 9 "MPZ1608S601ATA00" H 7050 4025 50  0001 C CNN "MPN"
+F 10 "TDK Corporation" H 7050 4025 50  0001 C CNN "Manufacturer"
+	1    7200 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L C C72
+U 1 1 5A18DB09
+P 8150 4100
+AR Path="/5A18DB09" Ref="C72"  Part="1" 
+AR Path="/5A1856B9/5A18DB09" Ref="C72"  Part="1" 
+F 0 "C72" H 8175 4200 50  0000 L CNN
+F 1 "0.1uF" H 8175 4000 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 8188 3950 50  0001 C CNN
+F 3 "http://search.murata.co.jp/Ceramy/image/img/A01X/partnumbering_e_01.pdf" H 8150 4100 50  0001 C CNN
+F 4 "Fitted" H 8175 4300 50  0001 C CNN "DNP"
+F 5 "CAP CER 0.1UF 16V X7R 0603" H 8175 4300 50  0001 C CNN "Description"
+F 6 "490-1532-6-ND" H 8175 4300 50  0001 C CNN "Digi-Key_PN"
+F 7 "125" H 8175 4300 50  0001 C CNN "HighTemp"
+F 8 "-55" H 8175 4300 50  0001 C CNN "LowTemp"
+F 9 "GRM188R71C104KA01D" H 8175 4300 50  0001 C CNN "MPN"
+F 10 "Murata Electronics North America" H 8175 4300 50  0001 C CNN "Manufacturer"
+	1    8150 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C73
+U 1 1 5A18DE17
+P 8500 4100
+AR Path="/5A18DE17" Ref="C73"  Part="1" 
+AR Path="/5A1856B9/5A18DE17" Ref="C73"  Part="1" 
+F 0 "C73" H 8525 4200 50  0000 L CNN
+F 1 "0.1uF" H 8525 4000 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 8538 3950 50  0001 C CNN
+F 3 "http://search.murata.co.jp/Ceramy/image/img/A01X/partnumbering_e_01.pdf" H 8500 4100 50  0001 C CNN
+F 4 "Fitted" H 8525 4300 50  0001 C CNN "DNP"
+F 5 "CAP CER 0.1UF 16V X7R 0603" H 8525 4300 50  0001 C CNN "Description"
+F 6 "490-1532-6-ND" H 8525 4300 50  0001 C CNN "Digi-Key_PN"
+F 7 "125" H 8525 4300 50  0001 C CNN "HighTemp"
+F 8 "-55" H 8525 4300 50  0001 C CNN "LowTemp"
+F 9 "GRM188R71C104KA01D" H 8525 4300 50  0001 C CNN "MPN"
+F 10 "Murata Electronics North America" H 8525 4300 50  0001 C CNN "Manufacturer"
+	1    8500 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0194
+U 1 1 5A18DE9D
+P 8500 4300
+F 0 "#PWR0194" H 8500 4050 50  0001 C CNN
+F 1 "GND" H 8500 4150 50  0000 C CNN
+F 2 "" H 8500 4300 50  0001 C CNN
+F 3 "" H 8500 4300 50  0001 C CNN
+	1    8500 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Resistors_Stackpole_0805:1k R62
+U 1 1 5A18E824
+P 10600 4000
+F 0 "R62" V 10750 3930 40  0000 C CNN
+F 1 "10k" H 10640 4070 40  0000 C CNN
+F 2 "Resistors_SMD:R_0603" H 10725 3765 60  0001 C CNN
+F 3 "https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf" H 10725 3855 60  0001 C CNN
+F 4 "Fitted" H 10750 4030 50  0001 C CNN "DNP"
+F 5 "RES SMD 10K OHM 1% 1/10W 0603" H 10750 4030 50  0001 C CNN "Description"
+F 6 "RMCF0603FT10K0CT-ND" H 10750 4030 50  0001 C CNN "Digi-Key_PN"
+F 7 "155" H 10750 4030 50  0001 C CNN "HighTemp"
+F 8 "-55" H 10750 4030 50  0001 C CNN "LowTemp"
+F 9 "RMCF0603FT10K0 " H 10750 4030 50  0001 C CNN "MPN"
+F 10 "Stackpole Electronics Inc." H 10750 4030 50  0001 C CNN "Manufacturer"
+	1    10600 4000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Resistors_Stackpole_0805:1k R63
+U 1 1 5A18E862
+P 10950 4000
+F 0 "R63" V 11100 3930 40  0000 C CNN
+F 1 "10k" H 10990 4070 40  0000 C CNN
+F 2 "Resistors_SMD:R_0603" H 11075 3765 60  0001 C CNN
+F 3 "https://www.seielect.com/Catalog/SEI-RMCF_RMCP.pdf" H 11075 3855 60  0001 C CNN
+F 4 "Fitted" H 11100 4030 50  0001 C CNN "DNP"
+F 5 "RES SMD 10K OHM 1% 1/10W 0603" H 11100 4030 50  0001 C CNN "Description"
+F 6 "RMCF0603FT10K0CT-ND" H 11100 4030 50  0001 C CNN "Digi-Key_PN"
+F 7 "155" H 11100 4030 50  0001 C CNN "HighTemp"
+F 8 "-55" H 11100 4030 50  0001 C CNN "LowTemp"
+F 9 "RMCF0603FT10K0 " H 11100 4030 50  0001 C CNN "MPN"
+F 10 "Stackpole Electronics Inc." H 11100 4030 50  0001 C CNN "Manufacturer"
+	1    10950 4000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L IssiCustom:IS61WV5128BLL-10BLI U12
+U 1 1 5A22B651
+P 7950 5550
+F 0 "U12" H 7650 6600 50  0000 C CNN
+F 1 "IS61WV5128BLL-10BLI" H 8550 4500 50  0000 C CNN
+F 2 "ISSI_Custom:BGA_36_SRAM_IS61WV5128BLL-10BLI" H 7550 6500 50  0001 C CIN
+F 3 "http://www.issi.com/WW/pdf/61-64WV5128Axx-Bxx.pdf" H 8000 6700 50  0001 C CNN
+F 4 "Fitted" H 7650 6700 50  0001 C CNN "DNP"
+F 5 "IC SRAM 4MBIT 10NS 36MINIBGA" H 7650 6700 50  0001 C CNN "Description"
+F 6 "706-1063-ND" H 7650 6700 50  0001 C CNN "Digi-Key_PN"
+F 7 "85" H 7650 6700 50  0001 C CNN "HighTemp"
+F 8 "-40" H 7650 6700 50  0001 C CNN "LowTemp"
+F 9 "IS61WV5128BLL-10BLI" H 8000 6800 60  0001 C CNN "MPN"
+F 10 "ISSI, Integrated Silicon Solution Inc" H 7650 6700 50  0001 C CNN "Manufacturer"
+	1    7950 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0195
+U 1 1 5A2D945A
+P 8500 3850
+F 0 "#FLG0195" H 8500 3925 50  0001 C CNN
+F 1 "PWR_FLAG" H 8500 4000 50  0000 C CNN
+F 2 "" H 8500 3850 50  0001 C CNN
+F 3 "" H 8500 3850 50  0001 C CNN
+	1    8500 3850
+	1    0    0    -1  
+$EndComp
+Text Label 7450 3900 0    60   ~ 0
++3V3_SRAM
+Text Label 9550 3650 0    60   ~ 0
++3V3_SRAM
+Text HLabel 9350 4550 2    60   BiDi ~ 0
+SRAM_D[0..7]
+Text HLabel 11300 5500 2    60   Input ~ 0
+SRAM_~OE
+Text HLabel 11300 5600 2    60   Input ~ 0
+SRAM_~WE
+Text HLabel 11300 5750 2    60   Input ~ 0
+SRAM_~CE
+Text Label 6800 4650 0    60   ~ 0
+SRAM_A0
+Text Label 6800 4750 0    60   ~ 0
+SRAM_A1
+Text Label 6800 4850 0    60   ~ 0
+SRAM_A2
+Text Label 6800 4950 0    60   ~ 0
+SRAM_A3
+Text Label 6800 5050 0    60   ~ 0
+SRAM_A4
+Text Label 6800 5150 0    60   ~ 0
+SRAM_A5
+Text Label 6800 5250 0    60   ~ 0
+SRAM_A6
+Text Label 6800 5350 0    60   ~ 0
+SRAM_A7
+Text Label 6800 5450 0    60   ~ 0
+SRAM_A8
+Text Label 6800 5550 0    60   ~ 0
+SRAM_A9
+Text Label 6800 5650 0    60   ~ 0
+SRAM_A10
+Text Label 6800 5750 0    60   ~ 0
+SRAM_A11
+Text Label 6800 5850 0    60   ~ 0
+SRAM_A12
+Text Label 6800 5950 0    60   ~ 0
+SRAM_A13
+Text Label 6800 6050 0    60   ~ 0
+SRAM_A14
+Text Label 6800 6150 0    60   ~ 0
+SRAM_A15
+Text Label 6800 6250 0    60   ~ 0
+SRAM_A16
+Text Label 6800 6350 0    60   ~ 0
+SRAM_A17
+Text Label 6800 6450 0    60   ~ 0
+SRAM_A18
+Text HLabel 6400 4550 0    60   Input ~ 0
+SRAM_A[0..18]
+Text Label 8650 4650 0    60   ~ 0
+SRAM_D0
+Text Label 8650 4750 0    60   ~ 0
+SRAM_D1
+Text Label 8650 4850 0    60   ~ 0
+SRAM_D2
+Text Label 8650 4950 0    60   ~ 0
+SRAM_D3
+Text Label 8650 5050 0    60   ~ 0
+SRAM_D4
+Text Label 8650 5150 0    60   ~ 0
+SRAM_D5
+Text Label 8650 5250 0    60   ~ 0
+SRAM_D6
+Text Label 8650 5350 0    60   ~ 0
+SRAM_D7
+Text Notes 6750 7400 0    60   ~ 0
+Length-match all SRAM signals to within 500mils
+Text Notes 12950 10250 0    60   ~ 0
+200-002
+Wire Wire Line
+	7900 6650 7900 6700
+Wire Wire Line
+	7900 6700 8000 6700
+Wire Wire Line
+	8000 6700 8000 6650
+Wire Wire Line
+	7900 3900 7900 4400
+Wire Wire Line
+	7900 4400 8000 4400
+Wire Wire Line
+	8000 4400 8000 4450
+Wire Wire Line
+	7050 3900 6550 3900
+Wire Wire Line
+	6550 3900 6550 3800
+Wire Wire Line
+	7350 3900 7900 3900
+Wire Wire Line
+	8150 3900 8150 3950
+Wire Wire Line
+	8500 3850 8500 3900
+Wire Wire Line
+	8150 4300 8150 4250
+Wire Wire Line
+	8500 4300 8500 4250
+Wire Wire Line
+	7450 4650 6750 4650
+Wire Wire Line
+	7450 4750 6750 4750
+Wire Wire Line
+	7450 4850 6750 4850
+Wire Wire Line
+	7450 4950 6750 4950
+Wire Wire Line
+	7450 5050 6750 5050
+Wire Wire Line
+	7450 5150 6750 5150
+Wire Wire Line
+	7450 5250 6750 5250
+Wire Wire Line
+	7450 5350 6750 5350
+Wire Wire Line
+	7450 5450 6750 5450
+Wire Wire Line
+	7450 5550 6750 5550
+Wire Wire Line
+	7450 5650 6750 5650
+Wire Wire Line
+	7450 5750 6750 5750
+Wire Wire Line
+	7450 5850 6750 5850
+Wire Wire Line
+	7450 5950 6750 5950
+Wire Wire Line
+	7450 6050 6750 6050
+Wire Wire Line
+	7450 6150 6750 6150
+Wire Wire Line
+	7450 6250 6750 6250
+Wire Wire Line
+	7450 6350 6750 6350
+Wire Wire Line
+	7450 6450 6750 6450
+Wire Wire Line
+	9150 4650 8450 4650
+Wire Wire Line
+	9150 4750 8450 4750
+Wire Wire Line
+	9150 4850 8450 4850
+Wire Wire Line
+	9150 4950 8450 4950
+Wire Wire Line
+	9150 5050 8450 5050
+Wire Wire Line
+	9150 5150 8450 5150
+Wire Wire Line
+	9150 5250 8450 5250
+Wire Wire Line
+	9150 5350 8450 5350
+Wire Wire Line
+	8450 5750 10950 5750
+Wire Wire Line
+	8450 5500 10250 5500
+Wire Wire Line
+	8450 5600 10600 5600
+Wire Wire Line
+	10250 5500 10250 4000
+Wire Wire Line
+	10600 5600 10600 4000
+Wire Wire Line
+	10950 5750 10950 4000
+Wire Wire Line
+	9550 3650 10250 3650
+Wire Wire Line
+	10250 3650 10250 3800
+Wire Wire Line
+	10600 3650 10600 3800
+Wire Wire Line
+	10950 3650 10950 3800
+Wire Bus Line
+	6400 4550 6650 4550
+Wire Bus Line
+	9250 4550 9350 4550
+Entry Bus Bus
+	6650 6350 6750 6450
+Entry Bus Bus
+	6650 4550 6750 4650
+Entry Bus Bus
+	6650 4650 6750 4750
+Entry Bus Bus
+	6650 4750 6750 4850
+Entry Bus Bus
+	6650 4850 6750 4950
+Entry Bus Bus
+	6650 4950 6750 5050
+Entry Bus Bus
+	6650 5050 6750 5150
+Entry Bus Bus
+	6650 5150 6750 5250
+Entry Bus Bus
+	6650 5250 6750 5350
+Entry Bus Bus
+	6650 5350 6750 5450
+Entry Bus Bus
+	6650 5450 6750 5550
+Entry Bus Bus
+	6650 5550 6750 5650
+Entry Bus Bus
+	6650 5650 6750 5750
+Entry Bus Bus
+	6650 5750 6750 5850
+Entry Bus Bus
+	6650 5850 6750 5950
+Entry Bus Bus
+	6650 5950 6750 6050
+Entry Bus Bus
+	6650 6050 6750 6150
+Entry Bus Bus
+	6650 6150 6750 6250
+Entry Bus Bus
+	6650 6250 6750 6350
+Entry Bus Bus
+	9150 4650 9250 4550
+Entry Bus Bus
+	9150 4750 9250 4650
+Entry Bus Bus
+	9150 4850 9250 4750
+Entry Bus Bus
+	9150 4950 9250 4850
+Entry Bus Bus
+	9150 5050 9250 4950
+Entry Bus Bus
+	9150 5150 9250 5050
+Entry Bus Bus
+	9150 5250 9250 5150
+Entry Bus Bus
+	9150 5350 9250 5250
+Connection ~ 7900 6700
+Connection ~ 7900 4400
+Connection ~ 7900 3900
+Connection ~ 8150 3900
+Connection ~ 10250 3650
+Connection ~ 10600 3650
+Connection ~ 10250 5500
+Connection ~ 10600 5600
+Connection ~ 10950 5750
+Connection ~ 8500 3900
+Wire Wire Line
+	7900 6700 7900 6750
+Wire Wire Line
+	7900 4400 7900 4450
+Wire Wire Line
+	7900 3900 8150 3900
+Wire Wire Line
+	8150 3900 8500 3900
+Wire Wire Line
+	10250 3650 10600 3650
+Wire Wire Line
+	10600 3650 10950 3650
+Wire Wire Line
+	10250 5500 11300 5500
+Wire Wire Line
+	10600 5600 11300 5600
+Wire Wire Line
+	10950 5750 11300 5750
+Wire Wire Line
+	8500 3900 8500 3950
+Wire Bus Line
+	9250 4550 9250 5250
+Wire Bus Line
+	6650 4550 6650 6350
+Text Notes 2700 2050 0    60   ~ 0
+Use: MX25R6435FM2IH0 for memory
+$Comp
+L IssiCustom:IS25LP128-JBLE U?
+U 1 1 5AC22B41
+P 3000 1150
+F 0 "U?" H 3475 1441 60  0000 C CNN
+F 1 "IS25LP128-JBLE" H 3475 1333 60  0000 C CNN
+F 2 "Housings_SOIC:SO-8_5.3x6.2mm_Pitch1.27mm" H 3550 200 60  0001 C CNN
+F 3 "http://www.issi.com/WW/pdf/IS25LP032-064-128.pdf" H 3500 300 60  0001 C CNN
+F 4 "IS25LP128-JBLE" H 3450 400 60  0001 C CNN "MPN"
+	1    3000 1150
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
